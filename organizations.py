@@ -60,28 +60,20 @@ def flex_handler(flex):
     content = response.json()
 
     items = content.get('data',{}).get('items')
+    columns = [
+        'permalink','name','stock_exchange','stock_symbol',
+        'primary_role','short_description','profile_image_url',
+        'domain','homepage_url','facebook_url','twitter_url',
+        'linkedin_url','city_name','region_name','country_code'
+    ]
 
     result = []
+    result.append(columns)
+
     for i in items:
-        p = i.get('properties')
-
-        props = OrderedDict()
-        props['permalink'] = p.get('permalink','')
-        props['name'] = p.get('name','')
-        props['stock_exchange'] = p.get('stock_exchange','')
-        props['stock_symbol'] = p.get('stock_symbol','')
-        props['primary_role'] = p.get('primary_role','')
-        props['short_description'] = p.get('short_description','')
-        props['profile_image_url'] = p.get('profile_image_url','')
-        props['domain'] = p.get('domain','')
-        props['homepage_url'] = p.get('homepage_url','')
-        props['facebook_url'] = p.get('facebook_url','')
-        props['twitter_url'] = p.get('twitter_url','')
-        props['linkedin_url'] = p.get('linkedin_url','')
-        props['city_name'] = p.get('city_name','')
-        props['region_name'] = p.get('region_name','')
-        props['country_code'] = p.get('country_code','')
-
+        props = []
+        for c in columns:
+            props.append(i.get('properties').get(c,''))
         result.append(props)
 
     flex.output.content_type = 'application/json'
