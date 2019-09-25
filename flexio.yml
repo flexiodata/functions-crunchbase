@@ -1,26 +1,17 @@
-
-title: Crunchbase Function Pack
+title: Crunchbase
 description: Functions for accessing your Crunchbase info
 image:
   src: https://logo.clearbit.com/crunchbase.com
   alt: Crunchbase logo
 functions:
-- path: organizations.py
-- path: people.py
+  - path: organizations.py
+  - path: people.py
 prompts:
-  - element: form
-    name: form_splash
-    description: |
-      <div class="tc pt4">
-        <img src="https://logo.clearbit.com/crunchbase.com" alt="Crunchbase logo" />
-        <h1 style="margin: 0">Crunchbase Function Pack</h1>
-        <h2 style="margin: 0; border: 0">Functions for accessing information about people and organizations from Crunchbase</h2>
-      </div>
   - element: form
     name: form_api_key
     title: Crunchbase API key
     description: |
-      The Crunchbase Function Pack requires a Crunchbase Enterprise or Applications License
+      The Crunchbase integration requires a Crunchbase Enterprise or Applications License
       If you are not already registered for a Crunchbase Data account, register [here](https://about.crunchbase.com/solutions/).
     class: el-form--cozy el-form__label-tiny
     rules:
