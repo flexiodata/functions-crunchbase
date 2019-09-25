@@ -59,6 +59,31 @@ def flex_handler(flex):
     response = requests.get(url)
     content = response.json()
 
+    items = content.get('data',{}).get('items')
+
+    result = []
+    for i in items:
+        p = i.get('properties')
+
+        props = OrderedDict()
+        props['permalink'] = p.get('permalink','')
+        props['name'] = p.get('name','')
+        props['stock_exchange'] = p.get('stock_exchange','')
+        props['stock_symbol'] = p.get('stock_symbol','')
+        props['primary_role'] = p.get('primary_role','')
+        props['short_description'] = p.get('short_description','')
+        props['profile_image_url'] = p.get('profile_image_url','')
+        props['domain'] = p.get('domain','')
+        props['homepage_url'] = p.get('homepage_url','')
+        props['facebook_url'] = p.get('facebook_url','')
+        props['twitter_url'] = p.get('twitter_url','')
+        props['linkedin_url'] = p.get('linkedin_url','')
+        props['city_name'] = p.get('city_name','')
+        props['region_name'] = p.get('region_name','')
+        props['country_code'] = p.get('country_code','')
+
+        result.append(props)
+
     flex.output.content_type = 'application/json'
     flex.output.write(content)
 
