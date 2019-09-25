@@ -85,5 +85,5 @@ def flex_handler(flex):
         result.append(props)
 
     flex.output.content_type = 'application/json'
-    flex.output.write(content)
+    flex.output.write(result)
 
