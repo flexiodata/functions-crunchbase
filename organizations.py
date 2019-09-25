@@ -5,13 +5,13 @@
 # title: Crunchbase Organizations
 # description: Returns information about organizations satisfying a search term
 # params:
-# - name: query
-#   type: string
-#   description: Query string to use when searching for organizations
-#   required: true
+#   - name: query
+#     type: string
+#     description: Query string to use when searching for organizations
+#     required: true
 # examples:
-# - '"Crunchbase"'
-# - '"SpaceX"'
+#   - '"Crunchbase"'
+#   - '"SpaceX"'
 # notes: |-
 #   See https://www.crunchbase.com/ for more information
 # ---
