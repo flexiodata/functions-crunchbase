@@ -12,6 +12,7 @@ prompts:
     title: Crunchbase API key
     description: |
       The Crunchbase integration requires a Crunchbase Enterprise or Applications License.
+      
       If you are not already registered for a Crunchbase Data account, register [here](https://about.crunchbase.com/solutions/).
     class: el-form--cozy el-form__label-tiny
     rules:
