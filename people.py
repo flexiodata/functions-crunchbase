@@ -5,13 +5,13 @@
 # title: Crunchbase People
 # description: Returns information about people satisfying a search term
 # params:
-# - name: query
-#   type: string
-#   description: Query string to use when searching for people
-#   required: true
+#   - name: query
+#     type: string
+#     description: Query string to use when searching for people
+#     required: true
 # examples:
-# - '"Steve Jobs"'
-# - '"Bill Gates"'
+#   - '"Steve Jobs"'
+#   - '"Bill Gates"'
 # notes: |-
 #   See https://www.crunchbase.com/ for more information
 # ---
