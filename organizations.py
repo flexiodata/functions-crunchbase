@@ -22,12 +22,14 @@ import requests
 from cerberus import Validator
 from collections import OrderedDict
 
-CONST_CRUNCHBASE_API_CONNECTION_NAME = '' # TODO: fill out
-
 def flex_handler(flex):
 
-    # get the authorization token
-    auth_token = flex.connections[CONST_CRUNCHBASE_API_CONNECTION_NAME].description
+    # get the api key from the variable input
+    auth_token = dict(flex.vars).get('crunchbase_api_key')
+    if auth_token is None:
+        flex.output.content_type = "application/json"
+        flex.output.write([[""]])
+        return
 
     # get the input
     input = flex.input.read()
