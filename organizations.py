@@ -1,18 +1,18 @@
 
 # ---
-# name: cb-organizations
+# name: crunchbase-search-org
 # deployed: true
-# title: Crunchbase Organizations
-# description: Returns information about organizations satisfying a search term
+# title: Crunchbase Organization Enrichment
+# description: Returns profile information based on an organization's name
 # params:
-#   - name: query
+#   - name: name
 #     type: string
-#     description: Query string to use when searching for organizations
+#     description: The name of the organization
 #     required: true
 # examples:
 #   - '"Crunchbase"'
 #   - '"SpaceX"'
-# notes: |-
+# notes: |
 #   See https://www.crunchbase.com/ for more information
 # ---
 
@@ -42,7 +42,7 @@ def flex_handler(flex):
     # define the expected parameters and map the values to the parameter names
     # based on the positions of the keys/values
     params = OrderedDict()
-    params['query'] = {'required': True, 'type': 'string'}
+    params['name'] = {'required': True, 'type': 'string'}
     input = dict(zip(params.keys(), input))
 
     # validate the mapped input against the validator
@@ -51,7 +51,7 @@ def flex_handler(flex):
     if input is None:
         raise ValueError
 
-    query = input['query']
+    query = input['name']
 
     # api reference: https://data.crunchbase.com/reference
     url = 'https://api.crunchbase.com/v3.1/organizations'

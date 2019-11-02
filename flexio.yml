@@ -4,15 +4,15 @@ image:
   src: https://logo.clearbit.com/crunchbase.com
   alt: Crunchbase logo
 functions:
-  - path: organizations.py
-  - path: people.py
+  - path: crunchbase-search-org.py
+  - path: crunchbase-enrich-people.py
 prompts:
   - element: form
     name: form_api_key
     title: Crunchbase API key
     description: |
       The Crunchbase integration requires a Crunchbase Enterprise or Applications License.
-      
+
       If you are not already registered for a Crunchbase Data account, register [here](https://about.crunchbase.com/solutions/).
     class: el-form--cozy el-form__label-tiny
     rules:
