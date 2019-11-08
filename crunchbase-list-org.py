@@ -1,13 +1,13 @@
 
 # ---
-# name: crunchbase-search-org
+# name: crunchbase-list-org
 # deployed: true
-# title: Crunchbase Organization Enrichment
-# description: Returns profile information based on an organization's name
+# title: Crunchbase Organization Search
+# description: Returns a list of organization profiles that match a search term.
 # params:
-#   - name: name
+#   - name: search
 #     type: string
-#     description: The name of the organization
+#     description: Search string for the organization's name.
 #     required: true
 #   - name: properties
 #     type: array

@@ -1,13 +1,13 @@
 
 # ---
-# name: crunchbase-enrich-people
+# name: crunchbase-list-people
 # deployed: true
-# title: Crunchbase People Enrichment
-# description: Returns profile information based on a search for a person's name
+# title: Crunchbase People Search
+# description: Returns a list of people profiles that match a search term.
 # params:
 #   - name: search
 #     type: string
-#     description: A full-text search of the name of the individual
+#     description: Search string for the person's name.
 #     required: true
 #   - name: properties
 #     type: array

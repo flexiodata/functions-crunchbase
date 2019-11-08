@@ -4,8 +4,8 @@ image:
   src: https://logo.clearbit.com/crunchbase.com
   alt: Crunchbase logo
 functions:
-  - path: crunchbase-search-org.py
-  - path: crunchbase-enrich-people.py
+  - path: crunchbase-list-org.py
+  - path: crunchbase-list-people.py
 prompts:
   - element: form
     name: form_api_key
