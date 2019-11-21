@@ -1,4 +1,4 @@
-# Crunchbase Google Sheets & Excel Spreadsheet Add on
+# Crunchbase Google Sheets & Excel Spreadsheet Add-on
 
 Crunchbase is platform for finding business information about private and public companies, investors and investment rounds. This Crunchbase spreadsheet integration for Google Sheets and Microsoft Excel enables you to import data from your Crunchbase account API, like organizations, people, and investor information. This add-on will enable you to integrate on-demand, refreshable private and public company data without leaving your spreadsheet.
 
