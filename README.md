@@ -1,11 +1,11 @@
-# Crunchbase Spreadsheet Functions
+# Crunchbase Google Sheets & Excel Spreadsheet Add on
 
-Crunchbase Spreadsheet Functions enable you to get information about people and organizations in a spreadsheet using information from [Crunchbase](https://www.crunchbase.com).
+Crunchbase is platform for finding business information about private and public companies, investors and investment rounds. This Crunchbase spreadsheet integration for Google Sheets and Microsoft Excel enables you to import data from your Crunchbase account API, like organizations, people, and investor information. This add-on will enable you to integrate on-demand, refreshable private and public company data without leaving your spreadsheet.
 
-For example, you can:
+For example, with this Excel and Google Sheets add-on you can:
 
-* Get information about people, such as their first and last name, title, facebook url, and twitter url
-* Get information about an organization, such as a short description, stock ticker symbol, domain, homepage url, facebook url, and twitter url
+* Import data about people, such as their first and last name, title, Facebook URL, and Twitter URL
+* Extract data about an organization, such as a short description, stock ticker symbol, domain, homepage URL, facebook URL, and twitter URL
 
 Here are some examples:
 
