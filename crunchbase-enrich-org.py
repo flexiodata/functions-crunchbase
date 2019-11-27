@@ -104,7 +104,6 @@ def flex_handler(flex):
     property_map['stock_symbol'] = 'stock_symbol'
     property_map['primary_role'] = 'primary_role'
     property_map['short_description'] = 'short_description'
-    property_map['description'] = 'description'
     property_map['profile_image_url'] = 'profile_image_url'
     property_map['domain'] = 'domain'
     property_map['homepage_url'] = 'homepage_url'
