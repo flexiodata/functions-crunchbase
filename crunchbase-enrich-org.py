@@ -53,7 +53,7 @@
 #     * `founded_on_trust_code`: the founded_on trust code
 #     * `is_closed`: whether or not the organization is closed
 #     * `closed_on`: date the organization closed, if applicable
-#     * `closed_on_trust_code`: the
+#     * `closed_on_trust_code`: the closed-on trust code
 # ---
 
 import json
