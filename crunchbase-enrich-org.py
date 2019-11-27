@@ -45,7 +45,6 @@
 #     * `number_of_investments`: number of investments made in the organization
 #     * `num_employees_min`: minimum number of employees in the organization
 #     * `num_employees_max`: maximum number of employees in the organization
-#     * `also_known_as`: alias for the organization
 #     * `role_company`:  whether or not the organization is a company
 #     * `role_investor`: whether or not the organization is an investor
 #     * `role_group`: whether or not the organization is a group
@@ -125,7 +124,6 @@ def flex_handler(flex):
     property_map['number_of_investments'] = 'number_of_investments'
     property_map['num_employees_min'] = 'num_employees_min'
     property_map['num_employees_max'] = 'num_employees_max'
-    property_map['also_known_as'] = 'also_known_as'
     property_map['role_company'] = 'role_company'
     property_map['role_investor'] = 'role_investor'
     property_map['role_group'] = 'role_group'
