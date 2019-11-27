@@ -154,7 +154,7 @@ def flex_handler(flex):
         # if no domain is specified, echo the properties
         if search_domain == '':
             flex.output.content_type = 'application/json'
-            flex.output.write([[properties]])
+            flex.output.write([properties])
             return
 
         # trim off leading https://www, etc
