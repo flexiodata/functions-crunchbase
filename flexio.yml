@@ -4,6 +4,7 @@ image:
   src: https://logo.clearbit.com/crunchbase.com
   alt: Crunchbase logo
 functions:
+  - path: crunchbase-enrich-org.py
   - path: crunchbase-list-org.py
   - path: crunchbase-list-people.py
 prompts:
