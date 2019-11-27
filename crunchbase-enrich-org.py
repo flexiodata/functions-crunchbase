@@ -158,6 +158,8 @@ def flex_handler(flex):
         # trim off leading https://www, etc
         search_domain = search_domain.replace('https://www.', '')
         search_domain = search_domain.replace('http://www.', '')
+        search_domain = search_domain.replace('https://', '')
+        search_domain = search_domain.replace('http://', '')
         search_domain = search_domain.replace('www.', '')
 
         # make the initial api request to get
