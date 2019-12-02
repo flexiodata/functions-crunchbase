@@ -5,6 +5,7 @@ image:
   alt: Crunchbase logo
 functions:
   - path: crunchbase-enrich-org.py
+  - path: crunchbase-lead-investor.py
   - path: crunchbase-list-org.py
   - path: crunchbase-list-people.py
 prompts:
