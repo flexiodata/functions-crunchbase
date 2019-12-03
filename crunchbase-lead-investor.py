@@ -3,20 +3,25 @@
 # name: crunchbase-lead-investor
 # deployed: true
 # title: Crunchbase Lead Investor
-# description: Returns information about the first known lead investor for a company.
+# description: Returns information about the lead investor for a company for a particular round
 # params:
 #   - name: domain
 #     type: string
 #     description: The domain name of the organization for which you want to retrieve information. For example, "google.com". If no domain is specified, the function returns the properties names.
+#     required: true
+#   - name: round
+#     type: string
+#     description: The type of round to find the lead investor for; options in include "seed", "angel", "venture", "a", "b", etc.
 #     required: true
 #   - name: properties
 #     type: array
 #     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
 #     required: false
 # examples:
-#   - '"spacex.com"'
-#   - '"google.com"'
-#   - '"google.com", "name, announced_on, series, money_raised"'
+#   - '"spacex.com", "venture"'
+#   - '"g2.com", "angel"'
+#   - '"g2.com", "a"'
+#   - '"g2.com", "b", "name, announced_on, money_raised"'
 #   - '"", "*"'
 # notes: |
 #   The following properties are allowed:
@@ -65,6 +70,7 @@ def flex_handler(flex):
     # based on the positions of the keys/values
     params = OrderedDict()
     params['domain'] = {'required': True, 'type': 'string'}
+    params['round'] = {'required': True, 'type': 'string'}
     params['properties'] = {'required': False, 'validator': validator_list, 'coerce': to_list, 'default': '*'}
     input = dict(zip(params.keys(), input))
 
@@ -73,6 +79,9 @@ def flex_handler(flex):
     input = v.validated(input)
     if input is None:
         raise ValueError
+
+    # get the round to return information for
+    funding_round_requested = input['round'].lower().strip()
 
     # map this function's property names to the API's property names
     property_map = OrderedDict()
@@ -161,21 +170,51 @@ def flex_handler(flex):
         investment_info = {}
         is_lead_investor = False
         items = content.get('data',{}).get('items')
+
         for funding_round in items:
+
+            # see if the requested funding type matchees; if not, move on
+            funding_type = funding_round.get('properties',{}).get('funding_type','') or ''
+            funding_series = funding_round.get('properties',{}).get('series','') or ''
+            funding_type = funding_type.lower().strip()
+            funding_series = funding_series.lower().strip()
+
+            funding_round_requested_valid = False
+            if funding_type == 'angel' and funding_round_requested == funding_type:
+                funding_round_requested_valid = True
+            if funding_type == 'seed' and funding_round_requested == funding_type:
+                funding_round_requested_valid = True
+            if funding_type == 'venture' and funding_round_requested == funding_type and funding_series == '':
+                funding_round_requested_valid = True
+            if funding_type == 'venture' and funding_round_requested == funding_series:
+                funding_round_requested_valid = True
+
+            if funding_round_requested_valid is False:
+                continue
+
+            # we're have the requested funding round; populate the funding information and find the lead investor if available
+            investment_info['funding_type'] = funding_round.get('properties').get('funding_type')
+            investment_info['series'] = funding_round.get('properties').get('series')
+            investment_info['series_qualifier'] = funding_round.get('properties').get('series_qualifier')
+            investment_info['announced_on'] = funding_round.get('properties').get('announced_on')
+            investment_info['money_raised'] = funding_round.get('properties').get('money_raised')
+            investment_info['money_raised_currency_code'] = funding_round.get('properties').get('money_raised_currency_code')
+
             investments = funding_round.get('relationships',{}).get('investments',[])
             for i in investments:
-                is_lead_investor = i.get('properties',{}).get('is_lead_investor',False)
+
+                # if we have only one investor, they're the lead investor; if we have multiple
+                # investors, find the first investor listed as the lead investor and merge
+                # the information into the investment_info
+                is_lead_investor = len(investments) == 1 or i.get('properties',{}).get('is_lead_investor',False)
                 if is_lead_investor is True:
-                    investment_info = i.get('relationships',{}).get('investors',{}).get('properties',{})
-                    investment_info['funding_type'] = funding_round.get('properties').get('funding_type')
-                    investment_info['series'] = funding_round.get('properties').get('series')
-                    investment_info['series_qualifier'] = funding_round.get('properties').get('series_qualifier')
-                    investment_info['announced_on'] = funding_round.get('properties').get('announced_on')
-                    investment_info['money_raised'] = funding_round.get('properties').get('money_raised')
-                    investment_info['money_raised_currency_code'] = funding_round.get('properties').get('money_raised_currency_code')
+                    investor_info = i.get('relationships',{}).get('investors',{}).get('properties',{})
+                    investment_info = {**investment_info, **investor_info}
                     break
-            if is_lead_investor is True:
-                break
+
+            # the requested round matches, so we're done
+            break
+
         result = [[investment_info.get(property_map.get(p,''),'') or '' for p in properties]]
         result = json.dumps(result, default=to_string)
         flex.output.content_type = 'application/json'
