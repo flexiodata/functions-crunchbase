@@ -22,7 +22,7 @@
 #   - '"g2.com", "angel"'
 #   - '"g2.com", "a"'
 #   - '"g2.com", "b", "name, announced_on, money_raised"'
-#   - '"", "*"'
+#   - '"", "", "*"'
 # notes: |
 #   The following properties are allowed:
 #     * `permalink`: Crunchbase permalink identifier for the investor
