@@ -11,7 +11,7 @@
 #     required: true
 #   - name: round
 #     type: string
-#     description: The type of round to find the lead investor for; options in include "seed", "angel", "venture", "a", "b", etc.
+#     description: The type of round to find the lead investor for; options include "Seed", "Angel", "Venture", "A", "B", etc. and are case-insensitive.
 #     required: true
 #   - name: properties
 #     type: array
@@ -20,8 +20,8 @@
 # examples:
 #   - '"spacex.com", "venture"'
 #   - '"g2.com", "angel"'
-#   - '"g2.com", "a"'
-#   - '"g2.com", "b", "name, announced_on, money_raised"'
+#   - '"g2.com", "A"'
+#   - '"g2.com", "B", "name, announced_on, money_raised"'
 #   - '"", "", "*"'
 # notes: |
 #   The following properties are allowed:
