@@ -1,7 +1,7 @@
 title: Crunchbase Integration
 description: Functions for accessing your Crunchbase info
 image:
-  src: https://logo.clearbit.com/crunchbase.com
+  src: https://static.flex.io/assets/logos2/crunchbase.png
   alt: Crunchbase logo
 functions:
   - path: crunchbase-enrich-org.py
