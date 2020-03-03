@@ -3499,6 +3499,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3534,7 +3535,7 @@
                       "left": 3
                     },
                     "horizontalAlignment": "LEFT",
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3567,12 +3568,17 @@
                   }
                 },
                 {
+                  "userEnteredValue": {
+                    "formulaValue": "=IMAGE(\"https://seeklogo.com/images/C/crunchbase-logo-9F37917A11-seeklogo.com.png\")"
+                  },
+                  "effectiveValue": {},
                   "userEnteredFormat": {
                     "backgroundColor": {
                       "red": 0.043137256,
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3603,7 +3609,74 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "horizontalAlignment": "LEFT",
+                    "verticalAlignment": "MIDDLE",
+                    "wrapStrategy": "OVERFLOW_CELL",
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 1,
+                        "green": 1,
+                        "blue": 1
+                      },
+                      "fontFamily": "Arial",
+                      "fontSize": 10,
+                      "bold": false,
+                      "italic": false,
+                      "strikethrough": false,
+                      "underline": false,
+                      "foregroundColorStyle": {
+                        "themeColor": "BACKGROUND"
+                      }
+                    },
+                    "hyperlinkDisplayType": "PLAIN_TEXT",
+                    "backgroundColorStyle": {
+                      "rgbColor": {
+                        "red": 0.043137256,
+                        "green": 0.3254902,
+                        "blue": 0.5803922
+                      }
+                    }
+                  }
+                },
+                {
+                  "userEnteredFormat": {
+                    "backgroundColor": {
+                      "red": 0.043137256,
+                      "green": 0.3254902,
+                      "blue": 0.5803922
+                    },
+                    "verticalAlignment": "MIDDLE",
+                    "textFormat": {
+                      "foregroundColor": {
+                        "red": 1,
+                        "green": 1,
+                        "blue": 1
+                      },
+                      "foregroundColorStyle": {
+                        "themeColor": "BACKGROUND"
+                      }
+                    },
+                    "backgroundColorStyle": {
+                      "rgbColor": {
+                        "red": 0.043137256,
+                        "green": 0.3254902,
+                        "blue": 0.5803922
+                      }
+                    }
+                  },
+                  "effectiveFormat": {
+                    "backgroundColor": {
+                      "red": 0.043137256,
+                      "green": 0.3254902,
+                      "blue": 0.5803922
+                    },
+                    "padding": {
+                      "top": 2,
+                      "right": 3,
+                      "bottom": 2,
+                      "left": 3
+                    },
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3637,6 +3710,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3667,7 +3741,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3701,6 +3775,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3731,7 +3806,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3765,6 +3840,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3795,7 +3871,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3829,6 +3905,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3859,7 +3936,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3893,6 +3970,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3923,7 +4001,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -3957,6 +4035,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -3987,7 +4066,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -4021,6 +4100,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -4051,7 +4131,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -4085,6 +4165,7 @@
                       "green": 0.3254902,
                       "blue": 0.5803922
                     },
+                    "verticalAlignment": "MIDDLE",
                     "textFormat": {
                       "foregroundColor": {
                         "red": 1,
@@ -4115,71 +4196,7 @@
                       "bottom": 2,
                       "left": 3
                     },
-                    "verticalAlignment": "BOTTOM",
-                    "wrapStrategy": "OVERFLOW_CELL",
-                    "textFormat": {
-                      "foregroundColor": {
-                        "red": 1,
-                        "green": 1,
-                        "blue": 1
-                      },
-                      "fontFamily": "Arial",
-                      "fontSize": 10,
-                      "bold": false,
-                      "italic": false,
-                      "strikethrough": false,
-                      "underline": false,
-                      "foregroundColorStyle": {
-                        "themeColor": "BACKGROUND"
-                      }
-                    },
-                    "backgroundColorStyle": {
-                      "rgbColor": {
-                        "red": 0.043137256,
-                        "green": 0.3254902,
-                        "blue": 0.5803922
-                      }
-                    }
-                  }
-                },
-                {
-                  "userEnteredFormat": {
-                    "backgroundColor": {
-                      "red": 0.043137256,
-                      "green": 0.3254902,
-                      "blue": 0.5803922
-                    },
-                    "textFormat": {
-                      "foregroundColor": {
-                        "red": 1,
-                        "green": 1,
-                        "blue": 1
-                      },
-                      "foregroundColorStyle": {
-                        "themeColor": "BACKGROUND"
-                      }
-                    },
-                    "backgroundColorStyle": {
-                      "rgbColor": {
-                        "red": 0.043137256,
-                        "green": 0.3254902,
-                        "blue": 0.5803922
-                      }
-                    }
-                  },
-                  "effectiveFormat": {
-                    "backgroundColor": {
-                      "red": 0.043137256,
-                      "green": 0.3254902,
-                      "blue": 0.5803922
-                    },
-                    "padding": {
-                      "top": 2,
-                      "right": 3,
-                      "bottom": 2,
-                      "left": 3
-                    },
-                    "verticalAlignment": "BOTTOM",
+                    "verticalAlignment": "MIDDLE",
                     "wrapStrategy": "OVERFLOW_CELL",
                     "textFormat": {
                       "foregroundColor": {
@@ -6475,7 +6492,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B10, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B10, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Google"
@@ -6646,9 +6663,9 @@
                 },
                 {
                   "effectiveValue": {
-                    "numberValue": 1009
+                    "numberValue": 474
                   },
-                  "formattedValue": "1009",
+                  "formattedValue": "474",
                   "effectiveFormat": {
                     "backgroundColor": {
                       "red": 1,
@@ -6986,7 +7003,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B11, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B11, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Apple"
@@ -7497,7 +7514,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B12, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B12, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Microsoft"
@@ -7668,9 +7685,9 @@
                 },
                 {
                   "effectiveValue": {
-                    "numberValue": 1840
+                    "numberValue": 1893
                   },
-                  "formattedValue": "1840",
+                  "formattedValue": "1893",
                   "effectiveFormat": {
                     "backgroundColor": {
                       "red": 1,
@@ -8008,7 +8025,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B13, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B13, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Netflix"
@@ -8519,7 +8536,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B14, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B14, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Tesla"
@@ -9030,7 +9047,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B15, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B15, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Amazon"
@@ -9201,9 +9218,9 @@
                 },
                 {
                   "effectiveValue": {
-                    "numberValue": 2267
+                    "numberValue": 2366
                   },
-                  "formattedValue": "2267",
+                  "formattedValue": "2366",
                   "effectiveFormat": {
                     "backgroundColor": {
                       "red": 1,
@@ -9541,7 +9558,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B16, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B16, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Facebook"
@@ -10052,7 +10069,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B17, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B17, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Twitter"
@@ -10563,7 +10580,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B18, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B18, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Starbucks"
@@ -10734,9 +10751,9 @@
                 },
                 {
                   "effectiveValue": {
-                    "numberValue": 2510
+                    "numberValue": 2558
                   },
-                  "formattedValue": "2510",
+                  "formattedValue": "2558",
                   "effectiveFormat": {
                     "backgroundColor": {
                       "red": 1,
@@ -11074,7 +11091,7 @@
                 },
                 {
                   "userEnteredValue": {
-                    "formulaValue": "=FLEX(\"{{TEAM_NAME}}/crunchbase-enrich-org\", B19, ArrayFormula(join(\",\",$C$9:$K$9)))"
+                    "formulaValue": "=FLEX(\"{{team_name}}/crunchbase-enrich-org\", B19, ArrayFormula(join(\",\",$C$9:$K$9)))"
                   },
                   "effectiveValue": {
                     "stringValue": "Salesforce"
@@ -11245,9 +11262,9 @@
                 },
                 {
                   "effectiveValue": {
-                    "numberValue": 30513
+                    "numberValue": 31399
                   },
-                  "formattedValue": "30513",
+                  "formattedValue": "31399",
                   "effectiveFormat": {
                     "backgroundColor": {
                       "red": 1,
@@ -11500,7 +11517,7 @@
               "pixelSize": 23
             },
             {
-              "pixelSize": 31
+              "pixelSize": 43
             },
             {
               "pixelSize": 21
