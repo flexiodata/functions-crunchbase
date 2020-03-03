@@ -11,8 +11,105 @@
 #     required: true
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to all properties). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: permalink
+#     type: string
+#     description: The Crunchbase permalink identifier for the organization
+#   - name: name
+#     type: string
+#     description: The name of the organization
+#   - name: stock_exchange
+#     type: string
+#     description: The stock exchange for the organization
+#   - name: stock_symbol
+#     type: string
+#     description: The stock ticker for the organization
+#   - name: primary_role
+#     type: string
+#     description: The primary role of the organization
+#   - name: short_description
+#     type: string
+#     description: A short description of the organization
+#   - name: profile_image_url
+#     type: string
+#     description: A profile image URL for the organization
+#   - name: domain
+#     type: string
+#     description: The domain for the organization
+#   - name: homepage_url
+#     type: string
+#     description: The homepage URL for the organization
+#   - name: facebook_url
+#     type: string
+#     description: The Facebook URL for the organization
+#   - name: twitter_url
+#     type: string
+#     description: The Twitter URL for the organization
+#   - name: linkedin_url'
+#     type: string
+#     description: The LinkedIn URL for the organization
+#   - name: city_name
+#     type: string
+#     description: The city name for the organization
+#   - name: region_name'
+#     type: string
+#     description: The region name for the organization
+#   - name: country_code
+#     type: string
+#     description: The country code for the organization
+#   - name: rank
+#     type: string
+#     description: The Crunchbase organization rank
+#   - name: contact_email
+#     type: string
+#     description: The contact email for the organization
+#   - name: phone_number
+#     type: string
+#     description: The phone number for the organization
+#   - name: founded_on
+#     type: string
+#     description: The date the organization was founded on
+#   - name: total_funding_usd
+#     type: string
+#     description: The total funding dollars for the organization in USD
+#   - name: number_of_investments
+#     type: string
+#     description: The number of investments made in the organization
+#   - name: num_employees_min
+#     type: string
+#     description: The minimum number of employees in the organization
+#   - name: num_employees_max
+#     type: string
+#     description: The maximum number of employees in the organization
+#   - name: role_company
+#     type: string
+#     description: Whether or not the organization is a company
+#   - name: role_investor
+#     type: string
+#     description: Whether or not the organization is an investor
+#   - name: role_group
+#     type: string
+#     description: Whether or not the organization is a group
+#   - name: role_school
+#     type: string
+#     description: Whether or not the organization is a school
+#   - name: investor_type
+#     type: string
+#     description: The investor type
+#   - name: founded_on_trust_code
+#     type: string
+#     description: The founded_on trust code
+#   - name: is_closed
+#     type: string
+#     description: Whether or not the organization is closed
+#   - name: closed_on
+#     type: string
+#     description: The date the organization closed, if applicable
+#   - name: closed_on_trust_code
+#     type: string
+#     description: The closed-on trust code
 # examples:
 #   - '"spacex.com"'
 #   - '"apple.com"'
@@ -20,40 +117,6 @@
 #   - '"apple.com", "permalink, name, short_description, founded_on"'
 #   - '"apple.com", "short_description, region_name, founded_on, num_employees_min, num_employees_max, contact_email, linkedin_url"'
 #   - '"", "*"'
-# notes: |
-#   The following properties are allowed:
-#     * `permalink`: Crunchbase permalink identifier for the organization
-#     * `name`: name of the organization
-#     * `stock_exchange`: stock exchange for the organization
-#     * `stock_symbol`: stock ticker for the organization
-#     * `primary_role`:
-#     * `short_description`: short description of the organization
-#     * `profile_image_url`: profile image url for the organization
-#     * `domain`: domain for the organization
-#     * `homepage_url`: homepage url for the organization
-#     * `facebook_url`: facebook url for the organization
-#     * `twitter_url`: twitter url for the organization
-#     * `linkedin_url'`: linkedin url for the organization
-#     * `city_name`: city name for the organization
-#     * `region_name'`: region name for the organization
-#     * `country_code`: country code for the organization
-#     * `rank`: crunchbase organization rank
-#     * `contact_email`: contact email for the organization
-#     * `phone_number`: phone number for the organization
-#     * `founded_on`: date the organization was founded on
-#     * `total_funding_usd`: total funding dollars for the organization in USD
-#     * `number_of_investments`: number of investments made in the organization
-#     * `num_employees_min`: minimum number of employees in the organization
-#     * `num_employees_max`: maximum number of employees in the organization
-#     * `role_company`:  whether or not the organization is a company
-#     * `role_investor`: whether or not the organization is an investor
-#     * `role_group`: whether or not the organization is a group
-#     * `role_school`: whether or not the organization is a school
-#     * `investor_type`: the investor type
-#     * `founded_on_trust_code`: the founded_on trust code
-#     * `is_closed`: whether or not the organization is closed
-#     * `closed_on`: date the organization closed, if applicable
-#     * `closed_on_trust_code`: the closed-on trust code
 # ---
 
 import json

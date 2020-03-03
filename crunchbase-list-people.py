@@ -11,27 +11,54 @@
 #     required: true
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to all properties). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: permalink
+#     type: string
+#     description: The Crunchbase permalink identifier for the person
+#   - name: first_name
+#     type: string
+#     description: The first name of the person
+#   - name: last_name
+#     type: string
+#     description: The last name of the person
+#   - name: gender
+#     type: string
+#     description: The gender of the person
+#   - name: title
+#     type: string
+#     description: The title of the person
+#   - name: organization_permalink
+#     type: string
+#     description: The Crunchbase permalink identifier of the organization of which the person is a member
+#   - name: profile_image_url
+#     type: string
+#     description: The profile image for the person
+#   - name: homepage_url
+#     type: string
+#     description: The homepage URL for the person
+#   - name: facebook_url
+#     type: string
+#     description: The Facebook URL for the person
+#   - name: twitter_url
+#     type: string
+#     description: The Twitter URL for the person
+#   - name: linkedin_url
+#     type: string
+#     description: The LinkedIn URL for the person
+#   - name: city_name
+#     type: string
+#     description: The city name where the person is located
+#   - name: region_name
+#     type: string
+#     description: The region name where the person is located
+#   - name: country_code
+#     type: string
+#     description: The country code where the person is located
 # examples:
 #   - '"Steve Jobs"'
 #   - '"Bill Gates"'
-# notes: |
-#   The following properties are allowed:
-#     * `permalink`: Crunchbase permalink identifier for the person
-#     * `first_name`: first name of the person
-#     * `last_name`: last name of the person
-#     * `gender`: gender of the person
-#     * `title`: title of the person
-#     * `organization_permalink`: Crunchbase permalink identifier of the organization of which the person is a member
-#     * `profile_image_url`: profile image for the person
-#     * `homepage_url`: homepage url for the person
-#     * `facebook_url`: facebook url for the person
-#     * `twitter_url`: twitter url for the person
-#     * `linkedin_url`: linkedin url for the person
-#     * `city_name`: city name where the person is located
-#     * `region_name`: region name where the person is located
-#     * `country_code`: country code where the person is located
 # ---
 
 import json

@@ -15,30 +15,57 @@
 #     required: true
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to all properties). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: permalink
+#     type: string
+#     description: The Crunchbase permalink identifier for the investor
+#   - name: name
+#     type: string
+#     description: The name of the investor
+#   - name: stock_exchange
+#     type: string
+#     description: The stock exchange for the investor
+#   - name: stock_symbol
+#     type: string
+#     description: The stock ticker for the investor
+#   - name: primary_role
+#     type: string
+#     description: The primary role of the investor
+#   - name: short_description
+#     type: string
+#     description: A short description of the investor
+#   - name: profile_image_url
+#     type: string
+#     description: The profile image URL for the investor
+#   - name: homepage_url
+#     type: string
+#     description: The homepage URL for the investor
+#   - name: funding_type
+#     type: string
+#     description: The funding type
+#   - name: series
+#     type: string
+#     description: The series type
+#   - name: series_qualifier
+#     type: string
+#     description: The series type qualifier
+#   - name: announced_on
+#     type: string
+#     description: The date the investment was announced
+#   - name: money_raised
+#     type: string
+#     description: The total amount raised in the funding round
+#   - name: money_raised_currency_code
+#     type: string
+#     description: The currency of the total amount raised in the funding round
 # examples:
 #   - '"spacex.com", "venture"'
 #   - '"g2.com", "angel"'
 #   - '"g2.com", "A"'
 #   - '"g2.com", "B", "name, announced_on, money_raised"'
 #   - '"", "", "*"'
-# notes: |
-#   The following properties are allowed:
-#     * `permalink`: Crunchbase permalink identifier for the investor
-#     * `name`: name of the investor
-#     * `stock_exchange`: stock exchange for the investor
-#     * `stock_symbol`: stock ticker for the investor
-#     * `primary_role`: the primary role of the investor
-#     * `short_description`: short description of the investor
-#     * `profile_image_url`: profile image url for the investor
-#     * `homepage_url`: homepage url for the investor
-#     * `funding_type`: the funding type
-#     * `series`: the series type
-#     * `series_qualifier`: the series type qualifier
-#     * `announced_on`: the date the investment was announced
-#     * `money_raised`: the total amount raised in the funding round
-#     * `money_raised_currency_code`: the currency of the total amount raised in the funding round
 # ---
 
 import json

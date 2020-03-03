@@ -11,28 +11,57 @@
 #     required: true
 #   - name: properties
 #     type: array
-#     description: The properties to return (defaults to all properties). See "Notes" for a listing of the available properties.
+#     description: The properties to return (defaults to all properties). See "Returns" for a listing of the available properties.
 #     required: false
+# returns:
+#   - name: permalink
+#     type: string
+#     description: The Crunchbase permalink identifier for the organization
+#   - name: name
+#     type: string
+#     description: The name of the organization
+#   - name: stock_exchange
+#     type: string
+#     description: The stock exchange for the organization
+#   - name: stock_symbol
+#     type: string
+#     description: The stock ticker for the organization
+#   - name: primary_role
+#     type: string
+#     description: The primary role of the organization
+#   - name: short_description
+#     type: string
+#     description: A short description of the organization
+#   - name: profile_image_url
+#     type: string
+#     description: The profile image URL for the organization
+#   - name: domain
+#     type: string
+#     description: The domain for the organization
+#   - name: homepage_url
+#     type: string
+#     description: The homepage URL for the organization
+#   - name: facebook_url
+#     type: string
+#     description: The Facebook URL for the organization
+#   - name: twitter_url
+#     type: string
+#     description: The Twitter URL for the organization
+#   - name: linkedin_url'
+#     type: string
+#     description: The LinkedIn URL for the organization
+#   - name: city_name
+#     type: string
+#     description: The city name for the organization
+#   - name: region_name'
+#     type: string
+#     description: The region name for the organization
+#   - name: country_code
+#     type: string
+#     description: The country code for the organization
 # examples:
 #   - '"Crunchbase"'
 #   - '"SpaceX"'
-# notes: |
-#   The following properties are allowed:
-#     * `permalink`: Crunchbase permalink identifier for the organization
-#     * `name`: name of the organization
-#     * `stock_exchange`: stock exchange for the organization
-#     * `stock_symbol`: stock ticker for the organization
-#     * `primary_role`:
-#     * `short_description`: short description of the organization
-#     * `profile_image_url`: profile image url for the organization
-#     * `domain`: domain for the organization
-#     * `homepage_url`: homepage url for the organization
-#     * `facebook_url`: facebook url for the organization
-#     * `twitter_url`: twitter url for the organization
-#     * `linkedin_url'`: linkedin url for the organization
-#     * `city_name`: city name for the organization
-#     * `region_name'`: region name for the organization
-#     * `country_code`: country code for the organization
 # ---
 
 import json
