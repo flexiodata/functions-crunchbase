@@ -8,6 +8,8 @@ functions:
   - path: crunchbase-lead-investor.py
   - path: crunchbase-list-org.py
   - path: crunchbase-list-people.py
+templates:
+  - path: templates/crunchbase-enrich-org.json
 prompts:
   - element: form
     name: form_api_key
