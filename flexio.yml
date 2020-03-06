@@ -9,7 +9,9 @@ functions:
   - path: crunchbase-list-org.py
   - path: crunchbase-list-people.py
 templates:
-  - path: templates/crunchbase-enrich-org.json
+  - title: Enrich an Email List with Company Data
+    gsheets_path: templates/gdrive/crunchbase-enrich-org.json
+    excel_path: ''
 prompts:
   - element: form
     name: form_api_key
