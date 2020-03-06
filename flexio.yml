@@ -10,7 +10,19 @@ functions:
   - path: crunchbase-list-people.py
 templates:
   - title: Enrich an Email List with Company Data
-    gsheets_path: templates/gdrive/crunchbase-enrich-org.json
+    gsheets_spreadsheet_id: 1V7hlpQAWuZRP69Aji_IsMvextgiiSQowPLf6nNjaD_M
+    excel_path: ''
+  - title: People Search
+    gsheets_spreadsheet_id: 1TunA7WXTZkB4Y28YEwHfREY9ZXDyeUdDUGApo85v-n4
+    excel_path: ''
+  - title: Organization Search
+    gsheets_spreadsheet_id: 1LVmZ-YjzlX0FEcvfVSTMFlTWheWD2Cy0f9kq0ioICes
+    excel_path: ''
+  - title: Lookup Lead Investors
+    gsheets_spreadsheet_id: 18Karg9DsBXCbztEuOKc_0UZzTf33K6zbyCzZGHXdc-0
+    excel_path: ''
+  - title: Lookup Company Data
+    gsheets_spreadsheet_id: 11KFNaZlkgm--lnxLa67gANfFa_xPiqHBMOuBUXTyInU
     excel_path: ''
 prompts:
   - element: form
