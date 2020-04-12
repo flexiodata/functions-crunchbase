@@ -10,18 +10,23 @@ functions:
   - path: crunchbase-list-people.py
 templates:
   - title: Enrich an Email List with Company Data
+    description: 'Repudiandae qui nulla quos harum fuga consectetur, sit tenetur exercitationem!'
     gsheets_spreadsheet_id: 1V7hlpQAWuZRP69Aji_IsMvextgiiSQowPLf6nNjaD_M
     excel_path: ''
   - title: People Search
+    description: 'Maxime, distinctio explicabo. Laboriosam asperiores, accusamus quibusdam neque. Corrupti, fuga, consequuntur.'
     gsheets_spreadsheet_id: 1TunA7WXTZkB4Y28YEwHfREY9ZXDyeUdDUGApo85v-n4
     excel_path: ''
   - title: Organization Search
+    description: 'Rem consequuntur ratione quia labore, a vel. Consectetur ratione, reiciendis veniam corrupti praesentium voluptate illo ea vel non ducimus necessitatibus tenetur distinctio.'
     gsheets_spreadsheet_id: 1LVmZ-YjzlX0FEcvfVSTMFlTWheWD2Cy0f9kq0ioICes
     excel_path: ''
   - title: Lookup Lead Investors
+    description: 'Maxime ad labore aut numquam fugit. Perspiciatis illo illum, optio quisquam eius quae facilis natus placeat temporibus ipsum ea eos vitae perferendis!'
     gsheets_spreadsheet_id: 18Karg9DsBXCbztEuOKc_0UZzTf33K6zbyCzZGHXdc-0
     excel_path: ''
   - title: Lookup Company Data
+    description: 'Aperiam amet sapiente distinctio, temporibus tenetur sint, blanditiis non ipsam minima maiores, ipsum illum molestias, deleniti rerum qui! Autem, sed quasi culpa.'
     gsheets_spreadsheet_id: 11KFNaZlkgm--lnxLa67gANfFa_xPiqHBMOuBUXTyInU
     excel_path: ''
 prompts:
