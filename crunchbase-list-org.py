@@ -47,13 +47,13 @@
 #   - name: twitter_url
 #     type: string
 #     description: The Twitter URL for the organization
-#   - name: linkedin_url'
+#   - name: linkedin_url
 #     type: string
 #     description: The LinkedIn URL for the organization
 #   - name: city_name
 #     type: string
 #     description: The city name for the organization
-#   - name: region_name'
+#   - name: region_name
 #     type: string
 #     description: The region name for the organization
 #   - name: country_code
