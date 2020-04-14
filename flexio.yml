@@ -11,8 +11,16 @@ functions:
   - path: crunchbase-list-people.py
 
 templates:
-  - title: Enrich an Email List with Company Data
-    description: 'Repudiandae qui nulla quos harum fuga consectetur, sit tenetur exercitationem!'
+  - name: query-crunchbase-data
+    title: Interactively search and filter Crunchbase data
+    description: 'Quickly load and filter any data from Crunchbase in your spreadsheet.'
+    gsheets_spreadsheet_id: ''
+    excel_path: ''
+    in_production: false
+    in_staging: false  
+  - name: enrich-email-list-with-company-data
+    title: Enrich an email list with company data
+    description: 'Add company data from Crunchbase to a list of email addresses'
     gsheets_spreadsheet_id: 1V7hlpQAWuZRP69Aji_IsMvextgiiSQowPLf6nNjaD_M
     excel_path: ''
     in_production: true
