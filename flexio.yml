@@ -13,7 +13,7 @@ functions:
 templates:
   - name: search-and-filter-crunchbase-data
     title: Interactively search and filter Crunchbase data
-    description: 'Quickly load and filter any data from Crunchbase in your spreadsheet.'
+    description: 'Quickly load and filter any data from Crunchbase in your spreadsheet'
     gsheets_spreadsheet_id: ''
     excel_path: ''
     in_production: false
@@ -23,21 +23,21 @@ templates:
     description: 'Find investors for one or more companies using their name'
     gsheets_spreadsheet_id: ''
     excel_path: ''
-    in_production: true
+    in_production: false
     in_staging: false
   - name: lookup-people-at-venture-capital-firms
     title: Lookup people at Venture Capital firms
     description: 'Get a list of people at different VC firms'
     gsheets_spreadsheet_id: ''
     excel_path: ''
-    in_production: true
+    in_production: false
     in_staging: false
   - name: find-people-at-recently-acquired-companies
     title: Find people at recently acquired companies
     description: 'Get a list of people at recently acquired companies'
     gsheets_spreadsheet_id: ''
     excel_path: ''
-    in_production: true
+    in_production: false
     in_staging: false
   - name: enrich-email-list-with-company-data
     title: Enrich an email list with company data
