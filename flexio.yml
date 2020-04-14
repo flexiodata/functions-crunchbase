@@ -17,7 +17,7 @@ templates:
     gsheets_spreadsheet_id: ''
     excel_path: ''
     in_production: false
-    in_staging: false  
+    in_staging: false
   - name: lookup-investors-for-list-of-companies
     title: Lookup investors for a list of companies
     description: 'Find investors for one or more companies using their name'
@@ -53,7 +53,7 @@ templates:
     excel_path: ''
     in_production: true
     in_staging: false
-  - name: lookup-data-for-organizations    
+  - name: lookup-data-for-organizations
     title: Lookup data for organizations
     description: 'Get Crunchbase data for a list of organizations using their name or website domain'
     gsheets_spreadsheet_id: 1LVmZ-YjzlX0FEcvfVSTMFlTWheWD2Cy0f9kq0ioICes
@@ -61,7 +61,6 @@ templates:
     in_production: true
     in_staging: false
 
-    
 prompts:
   - element: form
     name: form_api_key
