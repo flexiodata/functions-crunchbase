@@ -11,37 +11,56 @@ functions:
   - path: crunchbase-list-people.py
 
 templates:
-  - title: Enrich an Email List with Company Data
-    description: 'Repudiandae qui nulla quos harum fuga consectetur, sit tenetur exercitationem!'
+  - name: search-and-filter-crunchbase-data
+    title: Interactively search and filter Crunchbase data
+    description: 'Quickly load and filter any data from Crunchbase in your spreadsheet'
+    gsheets_spreadsheet_id: ''
+    excel_path: ''
+    in_production: false
+    in_staging: false
+  - name: lookup-investors-for-list-of-companies
+    title: Lookup investors for a list of companies
+    description: 'Find investors for one or more companies using their name'
+    gsheets_spreadsheet_id: ''
+    excel_path: ''
+    in_production: false
+    in_staging: false
+  - name: lookup-people-at-venture-capital-firms
+    title: Lookup people at Venture Capital firms
+    description: 'Get a list of people at different VC firms'
+    gsheets_spreadsheet_id: ''
+    excel_path: ''
+    in_production: false
+    in_staging: false
+  - name: find-people-at-recently-acquired-companies
+    title: Find people at recently acquired companies
+    description: 'Get a list of people at recently acquired companies'
+    gsheets_spreadsheet_id: ''
+    excel_path: ''
+    in_production: false
+    in_staging: false
+  - name: enrich-email-list-with-company-data
+    title: Enrich an email list with company data
+    description: 'Add company data from Crunchbase to a list of email addresses'
     gsheets_spreadsheet_id: 1V7hlpQAWuZRP69Aji_IsMvextgiiSQowPLf6nNjaD_M
     excel_path: ''
     in_production: true
     in_staging: false
-  - title: People Search
-    description: 'Maxime, distinctio explicabo. Laboriosam asperiores, accusamus quibusdam neque. Corrupti, fuga, consequuntur.'
+  - name: lookup-data-for-people
+    title: Lookup data for people
+    description: 'Get Crunchbase data for a list of people using their name or LinkedIn profile'
     gsheets_spreadsheet_id: 1TunA7WXTZkB4Y28YEwHfREY9ZXDyeUdDUGApo85v-n4
     excel_path: ''
     in_production: true
     in_staging: false
-  - title: Organization Search
-    description: 'Rem consequuntur ratione quia labore, a vel. Consectetur ratione, reiciendis veniam corrupti praesentium voluptate illo ea vel non ducimus necessitatibus tenetur distinctio.'
+  - name: lookup-data-for-organizations
+    title: Lookup data for organizations
+    description: 'Get Crunchbase data for a list of organizations using their name or website domain'
     gsheets_spreadsheet_id: 1LVmZ-YjzlX0FEcvfVSTMFlTWheWD2Cy0f9kq0ioICes
     excel_path: ''
     in_production: true
     in_staging: false
-  - title: Lookup Lead Investors
-    description: 'Maxime ad labore aut numquam fugit. Perspiciatis illo illum, optio quisquam eius quae facilis natus placeat temporibus ipsum ea eos vitae perferendis!'
-    gsheets_spreadsheet_id: 18Karg9DsBXCbztEuOKc_0UZzTf33K6zbyCzZGHXdc-0
-    excel_path: ''
-    in_production: true
-    in_staging: false
-  - title: Lookup Company Data
-    description: 'Aperiam amet sapiente distinctio, temporibus tenetur sint, blanditiis non ipsam minima maiores, ipsum illum molestias, deleniti rerum qui! Autem, sed quasi culpa.'
-    gsheets_spreadsheet_id: 11KFNaZlkgm--lnxLa67gANfFa_xPiqHBMOuBUXTyInU
-    excel_path: ''
-    in_production: true
-    in_staging: false
-    
+
 prompts:
   - element: form
     name: form_api_key
