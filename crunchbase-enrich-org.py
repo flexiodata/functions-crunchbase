@@ -254,7 +254,7 @@ def flex_handler(flex):
         url_query_params = {'user_key': auth_token}
         url_query_str = urllib.parse.urlencode(url_query_params)
 
-        url = 'https://api.crunchbase.com/v3.1/organizations/' + organization_permalink + '/?' + url_query_str
+        url = 'https://api.crunchbase.com/v3.1/organizations/' + organization_permalink + '?' + url_query_str
         response = requests.get(url)
         response.raise_for_status()
         content = response.json()
