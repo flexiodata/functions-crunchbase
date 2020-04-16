@@ -28,14 +28,14 @@ templates:
   - name: lookup-data-for-people
     title: Lookup data for people
     description: 'Get Crunchbase data for a list of people using their name or LinkedIn profile'
-    gsheets_spreadsheet_id: 1TunA7WXTZkB4Y28YEwHfREY9ZXDyeUdDUGApo85v-n4
+    gsheets_spreadsheet_id: 1G1e_V0OOJPXgCRHNo0ltTv93LP2Ej8rncQi8XG7ACh8
     excel_spreadsheet_path: 'https://static.flex.io/integrations/crunchbase/templates/crunchbase-lookup-data-for-people.xlsx'
     in_production: true
     in_staging: false
   - name: lookup-data-for-companies
     title: Lookup data for companies
     description: 'Get Crunchbase data for a list of companies using their name or website domain'
-    gsheets_spreadsheet_id: 1LVmZ-YjzlX0FEcvfVSTMFlTWheWD2Cy0f9kq0ioICes
+    gsheets_spreadsheet_id: 11KFNaZlkgm--lnxLa67gANfFa_xPiqHBMOuBUXTyInU
     excel_spreadsheet_path: 'https://static.flex.io/integrations/crunchbase/templates/crunchbase-lookup-data-for-companies.xlsx'
     in_production: true
     in_staging: false
