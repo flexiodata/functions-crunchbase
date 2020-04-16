@@ -18,27 +18,6 @@ templates:
     excel_spreadsheet_path: 'https://static.flex.io/integrations/crunchbase/templates/crunchbase-search-and-filter-data.xlsx'
     in_production: false
     in_staging: false
-  - name: lookup-investors-for-list-of-companies
-    title: Lookup investors for a list of companies
-    description: 'Find investors for one or more companies using their name'
-    gsheets_spreadsheet_id: ''
-    excel_spreadsheet_path: ''
-    in_production: false
-    in_staging: false
-  - name: lookup-people-at-venture-capital-firms
-    title: Lookup people at Venture Capital firms
-    description: 'Get a list of people at different VC firms'
-    gsheets_spreadsheet_id: ''
-    excel_spreadsheet_path: ''
-    in_production: false
-    in_staging: false
-  - name: find-people-at-recently-acquired-companies
-    title: Find people at recently acquired companies
-    description: 'Get a list of people at recently acquired companies'
-    gsheets_spreadsheet_id: ''
-    excel_spreadsheet_path: ''
-    in_production: false
-    in_staging: false
   - name: enrich-email-list-with-company-data
     title: Enrich an email list with company data
     description: 'Add company data from Crunchbase to a list of email addresses'
