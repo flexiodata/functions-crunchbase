@@ -12,28 +12,28 @@ functions:
 
 templates:
   - name: search-and-filter-crunchbase-data
-    title: Interactively search and filter Crunchbase data
+    title: 'Interactively search and filter Crunchbase data'
     description: 'Quickly load and filter any data from Crunchbase in your spreadsheet'
     gsheets_spreadsheet_id: '1MqRaWKW47VKIkBEbBIYrmamjgCC5rLozd1zdUniuecw'
     excel_spreadsheet_path: 'https://static.flex.io/templates/crunchbase/crunchbase-search-and-filter-data.xlsx'
     in_production: false
     in_staging: false
   - name: enrich-email-list-with-company-data
-    title: Enrich an email list with company data
+    title: 'Enrich an email list with company data'
     description: 'Add company data from Crunchbase to a list of email addresses'
     gsheets_spreadsheet_id: 1V7hlpQAWuZRP69Aji_IsMvextgiiSQowPLf6nNjaD_M
     excel_spreadsheet_path: 'https://static.flex.io/templates/crunchbase/crunchbase-enrich-an-email-list-with-company-data.xlsx'
     in_production: true
     in_staging: false
   - name: lookup-data-for-people
-    title: Lookup data for people
+    title: 'Lookup data for people'
     description: 'Get Crunchbase data for a list of people using their name or LinkedIn profile'
     gsheets_spreadsheet_id: 1G1e_V0OOJPXgCRHNo0ltTv93LP2Ej8rncQi8XG7ACh8
     excel_spreadsheet_path: 'https://static.flex.io/templates/crunchbase/crunchbase-lookup-data-for-people.xlsx'
     in_production: true
     in_staging: false
   - name: lookup-data-for-companies
-    title: Lookup data for companies
+    title: 'Lookup data for companies'
     description: 'Get Crunchbase data for a list of companies using their name or website domain'
     gsheets_spreadsheet_id: 11KFNaZlkgm--lnxLa67gANfFa_xPiqHBMOuBUXTyInU
     excel_spreadsheet_path: 'https://static.flex.io/templates/crunchbase/crunchbase-lookup-data-for-companies.xlsx'
