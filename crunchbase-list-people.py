@@ -62,8 +62,10 @@
 # ---
 
 import json
-import requests
 import urllib
+import requests
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 import itertools
 from datetime import *
 from cerberus import Validator
@@ -122,7 +124,7 @@ def flex_handler(flex):
     url_query_str = urllib.parse.urlencode(url_query_params)
 
     url = 'https://api.crunchbase.com/v3.1/people?' + url_query_str
-    response = requests.get(url)
+    response = requests_retry_session().get(url)
     content = response.json()
 
     # get the properties to return and the property map
@@ -144,6 +146,25 @@ def flex_handler(flex):
     result = json.dumps(result, default=to_string)
     flex.output.content_type = "application/json"
     flex.output.write(result)
+
+def requests_retry_session(
+    retries=3,
+    backoff_factor=0.3,
+    status_forcelist=(500, 502, 504),
+    session=None,
+):
+    session = session or requests.Session()
+    retry = Retry(
+        total=retries,
+        read=retries,
+        connect=retries,
+        backoff_factor=backoff_factor,
+        status_forcelist=status_forcelist,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session
 
 def validator_list(field, value, error):
     if isinstance(value, str):
