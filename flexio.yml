@@ -16,7 +16,7 @@ templates:
     description: Import and filter any data from Crunchbase in your spreadsheet
     gsheets_spreadsheet_id: 1MqRaWKW47VKIkBEbBIYrmamjgCC5rLozd1zdUniuecw
     excel_spreadsheet_path: https://static.flex.io/templates/crunchbase/crunchbase-search-and-filter-data.xlsx
-    in_production: false
+    in_production: true
     in_staging: false
   - name: enrich-email-list-with-company-data
     title: Enrich an email list with company data
