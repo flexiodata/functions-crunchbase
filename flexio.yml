@@ -7,7 +7,7 @@ image:
 functions:
   - path: crunchbase-enrich-org.py
   - path: crunchbase-lead-investor.py
-  - path: crunchbase-list-org.py
+  - path: crunchbase-organization.py
   - path: crunchbase-list-people.py
 
 templates:
