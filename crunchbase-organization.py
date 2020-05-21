@@ -367,7 +367,8 @@ def get_data(params):
         "limit": 1000 # page size
     }
     headers = {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-cb-user-key': auth_token
     }
     url = 'https://api.crunchbase.com/api/v4/searches/organizations'
 
@@ -375,10 +376,7 @@ def get_data(params):
     max_pages = 5 # TODO: temporariliy limit number of pages; set to large value to get all pages
     while True:
 
-        url_query_params = {'user_key': auth_token}
-        url_query_str = urllib.parse.urlencode(url_query_params)
-
-        page_url = url + '?' + url_query_str
+        page_url = url
         response = requests_retry_session().post(page_url, data=json.dumps(query), headers=headers)
         response.raise_for_status()
         content = response.json()
@@ -446,7 +444,6 @@ def get_item_info(item):
     info['legal_name'] = item.get('legal_name')
     info['created_at'] = to_date(item.get('created_at'))
     info['updated_at'] = to_date(item.get('updated_at'))
-    item.get('legal_name')
     info['category_names'] = ", ".join([i.get('value') for i in item.get('categories',[])])
     info['category_group_names'] = ", ".join([i.get('value') for i in item.get('category_groups',[])])
     info['facet_ids'] = ", ".join(item.get('facet_ids',[]))
