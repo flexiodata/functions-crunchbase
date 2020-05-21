@@ -212,7 +212,7 @@
 #     description: Total number of sub-organizations that belongs to a parent organization
 #   - name: investor_type
 #     type: string
-#     description: Delmited list of the type of investors this organization is
+#     description: A delimited list of the type of investors this organization is
 #   - name: investor_stage
 #     type: string
 #     description: A delimited list of the stage of investments made by this organization
