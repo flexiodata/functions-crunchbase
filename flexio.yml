@@ -8,7 +8,7 @@ functions:
   - path: crunchbase-enrich-org.py
   - path: crunchbase-lead-investor.py
   - path: crunchbase-organization.py
-  - path: crunchbase-list-people.py
+  - path: crunchbase-people.py
 
 templates:
   - name: search-and-filter-crunchbase-data
