@@ -205,73 +205,67 @@ def flex_handler(flex):
     if len(properties) == 1 and properties[0] == '*':
         properties = list(property_map.keys())
 
-    try:
+    # see here for more info about using the api:
+    # https://data.crunchbase.com/reference
+    # https://data.crunchbase.com/docs/organization
 
-        # see here for more info about using the api:
-        # https://data.crunchbase.com/reference
-        # https://data.crunchbase.com/docs/organization
+    search_domain = input['domain'].lower().strip().strip("/")
 
-        search_domain = input['domain'].lower().strip().strip("/")
-
-        # if no domain is specified, echo the properties
-        if search_domain == '':
-            flex.output.content_type = 'application/json'
-            flex.output.write([properties])
-            return
-
-        # trim off leading https://www, etc
-        search_domain = search_domain.replace('https://www.', '')
-        search_domain = search_domain.replace('http://www.', '')
-        search_domain = search_domain.replace('https://', '')
-        search_domain = search_domain.replace('http://', '')
-        search_domain = search_domain.replace('www.', '')
-
-        # make the initial api request to get
-        url_query_params = {'user_key': auth_token, 'domain_name': search_domain}
-        url_query_str = urllib.parse.urlencode(url_query_params)
-
-        url = 'https://api.crunchbase.com/v3.1/organizations?' + url_query_str
-        response = requests_retry_session().get(url)
-        response.raise_for_status()
-        content = response.json()
-
-        organization_information_base = {}
-        organization_permalink = None
-
-        # get the permalink for the item that matches the domain
-        items = content.get('data',{}).get('items')
-        for organization in items:
-            item_properties = organization.get('properties',{})
-            item_domain = item_properties.get('domain','').lower().strip().strip("/")
-            if item_domain == search_domain:
-                organization_information_base = item_properties
-                organization_permalink = item_properties.get('permalink','')
-                break
-
-        # if we didn't find an organization, fall through to empty result
-        if organization_permalink is None:
-            raise ValueError('Unable to find domain')
-
-        # using the permalink, get additional information about the company
-        url_query_params = {'user_key': auth_token}
-        url_query_str = urllib.parse.urlencode(url_query_params)
-
-        url = 'https://api.crunchbase.com/v3.1/organizations/' + organization_permalink + '?' + url_query_str
-        response = requests_retry_session().get(url)
-        response.raise_for_status()
-        content = response.json()
-        organization_information_additional = content.get('data',{}).get('properties')
-
-        # merge the organization information and return the information for this item
-        organization_information = {**organization_information_base, **organization_information_additional}
-        result = [[organization_information.get(property_map.get(p,''),'') or '' for p in properties]]
-        result = json.dumps(result, default=to_string)
+    # if no domain is specified, echo the properties
+    if search_domain == '':
         flex.output.content_type = 'application/json'
-        flex.output.write(result)
+        flex.output.write([properties])
+        return
 
-    except:
-        flex.output.content_type = 'application/json'
-        flex.output.write([['']])
+    # trim off leading https://www, etc
+    search_domain = search_domain.replace('https://www.', '')
+    search_domain = search_domain.replace('http://www.', '')
+    search_domain = search_domain.replace('https://', '')
+    search_domain = search_domain.replace('http://', '')
+    search_domain = search_domain.replace('www.', '')
+
+    # make the initial api request to get
+    url_query_params = {'user_key': auth_token, 'domain_name': search_domain}
+    url_query_str = urllib.parse.urlencode(url_query_params)
+
+    url = 'https://api.crunchbase.com/v3.1/organizations?' + url_query_str
+    response = requests_retry_session().get(url)
+    response.raise_for_status()
+    content = response.json()
+
+    organization_information_base = {}
+    organization_permalink = None
+
+    # get the permalink for the item that matches the domain
+    items = content.get('data',{}).get('items')
+    for organization in items:
+        item_properties = organization.get('properties',{})
+        item_domain = item_properties.get('domain','').lower().strip().strip("/")
+        if item_domain == search_domain:
+            organization_information_base = item_properties
+            organization_permalink = item_properties.get('permalink','')
+            break
+
+    # if we didn't find an organization, fall through to empty result
+    if organization_permalink is None:
+        raise ValueError('Unable to find domain')
+
+    # using the permalink, get additional information about the company
+    url_query_params = {'user_key': auth_token}
+    url_query_str = urllib.parse.urlencode(url_query_params)
+
+    url = 'https://api.crunchbase.com/v3.1/organizations/' + organization_permalink + '?' + url_query_str
+    response = requests_retry_session().get(url)
+    response.raise_for_status()
+    content = response.json()
+    organization_information_additional = content.get('data',{}).get('properties')
+
+    # merge the organization information and return the information for this item
+    organization_information = {**organization_information_base, **organization_information_additional}
+    result = [[organization_information.get(property_map.get(p,''),'') or '' for p in properties]]
+    result = json.dumps(result, default=to_string)
+    flex.output.content_type = 'application/json'
+    flex.output.write(result)
 
 def requests_retry_session(
     retries=3,
