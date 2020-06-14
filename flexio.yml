@@ -11,6 +11,13 @@ functions:
   - path: crunchbase-people.py
 
 templates:
+  - name: crunchbase-quick-start-guide
+    title: Crunchbase quick start guide
+    description: Get started using Crunchbase data in your spreadsheet
+    gsheets_spreadsheet_id: 1oUbZd1pk3rbTsDSrYIyAoqPhWwPmV4aX9H-EpJgh6CE
+    excel_spreadsheet_path: https://static.flex.io/templates/crunchbase/crunchbase-quick-start-guide.xlsx
+    is_public: false
+    is_private: true
   - name: search-and-filter-crunchbase-data
     title: Interactively search and filter Crunchbase data
     description: Import and filter any data from Crunchbase in your spreadsheet
