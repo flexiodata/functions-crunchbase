@@ -1,0 +1,98 @@
+name: crunchbase-ipos
+deployed: true
+title: Crunchbase IPOs
+description: Returns data about IPOs
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-ipos/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: org_uuid
+    type: string
+    description:
+  - name: org_name
+    type: string
+    description:
+  - name: org_cb_url
+    type: string
+    description:
+  - name: country_code
+    type: string
+    description:
+  - name: state_code
+    type: string
+    description:
+  - name: region
+    type: string
+    description:
+  - name: city
+    type: string
+    description:
+  - name: stock_exchange_symbol
+    type: string
+    description:
+  - name: stock_symbol
+    type: string
+    description:
+  - name: went_public_on
+    type: date
+    description:
+  - name: share_price_usd
+    type: number
+    description:
+  - name: share_price
+    type: number
+    description:
+  - name: share_price_currency_code
+    type: string
+    description:
+  - name: valuation_price_usd
+    type: integer
+    description:
+  - name: valuation_price
+    type: integer
+    description:
+  - name: valuation_price_currency_code
+    type: string
+    description:
+  - name: money_raised_usd
+    type: integer
+    description:
+  - name: money_raised
+    type: integer
+    description:
+  - name: money_raised_currency_code
+    type: string
+    description:

@@ -1,0 +1,83 @@
+name: crunchbase-people
+deployed: true
+title: Crunchbase People
+description: Returns data about people
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-people/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: first_name
+    type: string
+    description:
+  - name: last_name
+    type: string
+    description:
+  - name: gender
+    type: string
+    description:
+  - name: country_code
+    type: string
+    description:
+  - name: state_code
+    type: string
+    description:
+  - name: region
+    type: string
+    description:
+  - name: city
+    type: string
+    description:
+  - name: featured_job_organization_uuid
+    type: string
+    description:
+  - name: featured_job_organization_name
+    type: string
+    description:
+  - name: featured_job_title
+    type: string
+    description:
+  - name: facebook_url
+    type: string
+    description:
+  - name: linkedin_url
+    type: string
+    description:
+  - name: twitter_url
+    type: string
+    description:
+  - name: logo_url
+    type: string
+    description:

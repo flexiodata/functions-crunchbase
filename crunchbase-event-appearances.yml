@@ -1,0 +1,62 @@
+name: crunchbase-event-appearances
+deployed: true
+title: Crunchbase Event Appearances
+description: Returns data about event appearances
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-event-appearances/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: event_uuid
+    type: integer
+    description:
+  - name: event_name
+    type: integer
+    description:
+  - name: participant_uuid
+    type: integer
+    description:
+  - name: participant_name
+    type: integer
+    description:
+  - name: participant_type
+    type: integer
+    description:
+  - name: appearance_type
+    type: integer
+    description:
+  - name: short_description
+    type: integer
+    description:

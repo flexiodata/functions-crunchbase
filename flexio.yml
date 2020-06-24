@@ -5,10 +5,23 @@ image:
   alt: Crunchbase logo
 
 functions:
-  - path: crunchbase-enrich-org.py
-  - path: crunchbase-lead-investor.py
-  - path: crunchbase-organization.py
-  - path: crunchbase-people.py
+  - path: crunchbase-acquisitions.yml
+  - path: crunchbase-category-groups.yml
+  - path: crunchbase-degrees.yml
+  - path: crunchbase-event-appearances.yml
+  - path: crunchbase-events.yml
+  - path: crunchbase-funding-rounds.yml
+  - path: crunchbase-funds.yml
+  - path: crunchbase-investment-partners.yml
+  - path: crunchbase-investments.yml
+  - path: crunchbase-investors.yml
+  - path: crunchbase-ipos.yml
+  - path: crunchbase-jobs.yml
+  - path: crunchbase-org-parents.yml
+  - path: crunchbase-organization-descriptions.yml
+  - path: crunchbase-organizations.yml
+  - path: crunchbase-people.yml
+  - path: crunchbase-people-descriptions.yml
 
 templates:
   - name: search-and-filter-crunchbase-data

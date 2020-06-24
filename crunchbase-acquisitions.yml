@@ -1,0 +1,98 @@
+name: crunchbase-acquisitions
+deployed: true
+title: Crunchbase Acquisitions
+description: Returns data about company acquisitions
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-acquisitions/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: acquiree_uuid
+    type: string
+    description:
+  - name: acquiree_name
+    type: string
+    description:
+  - name: acquiree_cb_url
+    type: string
+    description:
+  - name: acquiree_country_code
+    type: string
+    description:
+  - name: acquiree_state_code
+    type: string
+    description:
+  - name: acquiree_region
+    type: string
+    description:
+  - name: acquiree_city
+    type: string
+    description:
+  - name: acquirer_uuid
+    type: string
+    description:
+  - name: acquirer_name
+    type: string
+    description:
+  - name: acquirer_cb_url
+    type: string
+    description:
+  - name: acquirer_country_code
+    type: string
+    description:
+  - name: acquirer_state_code
+    type: string
+    description:
+  - name: acquirer_region
+    type: string
+    description:
+  - name: acquirer_city
+    type: string
+    description:
+  - name: acquisition_type
+    type: string
+    description:
+  - name: acquired_on
+    type: date
+    description:
+  - name: price_usd
+    type: integer
+    description:
+  - name: price
+    type: integer
+    description:
+  - name: price_currency_code
+    type: string
+    description:

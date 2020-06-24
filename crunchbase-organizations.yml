@@ -1,0 +1,141 @@
+name: crunchbase-organizations
+deployed: true
+title: Crunchbase Organizations
+description: Returns data about organizations
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-organizations/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: legal_name
+    type: string
+    description:
+  - name: roles
+    type: string
+    description:
+  - name: domain
+    type: string
+    description:
+  - name: homepage_url
+    type: string
+    description:
+  - name: country_code
+    type: string
+    description:
+  - name: state_code
+    type: string
+    description:
+  - name: region
+    type: string
+    description:
+  - name: city
+    type: string
+    description:
+  - name: address
+    type: string
+    description:
+  - name: postal_code
+    type: string
+    description:
+  - name: status
+    type: string
+    description:
+  - name: short_description
+    type: string
+    description:
+  - name: category_list
+    type: string
+    description:
+  - name: category_groups_list
+    type: string
+    description:
+  - name: num_funding_rounds
+    type: integer
+    description:
+  - name: total_funding_usd
+    type: integer
+    description:
+  - name: total_funding
+    type: integer
+    description:
+  - name: total_funding_currency_code
+    type: string
+    description:
+  - name: founded_on
+    type: date
+    description:
+  - name: last_funding_on
+    type: date
+    description:
+  - name: closed_on
+    type: date
+    description:
+  - name: employee_count
+    type: string
+    description:
+  - name: email
+    type: string
+    description:
+  - name: phone
+    type: string
+    description:
+  - name: facebook_url
+    type: string
+    description:
+  - name: linkedin_url
+    type: string
+    description:
+  - name: twitter_url
+    type: string
+    description:
+  - name: logo_url
+    type: string
+    description:
+  - name: alias1
+    type: string
+    description:
+  - name: alias2
+    type: string
+    description:
+  - name: alias3
+    type: string
+    description:
+  - name: primary_role
+    type: string
+    description:
+  - name: num_exits
+    type: integer
+    description:
+

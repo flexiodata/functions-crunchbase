@@ -1,0 +1,89 @@
+name: crunchbase-funding-rounds
+deployed: true
+title: Crunchbase Funding Rounds
+description: Returns data about funding rounds
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-funding-rounds/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: country_code
+    type: string
+    description:
+  - name: state_code
+    type: string
+    description:
+  - name: region
+    type: string
+    description:
+  - name: city
+    type: string
+    description:
+  - name: investment_type
+    type: string
+    description:
+  - name: announced_on
+    type: date
+    description:
+  - name: raised_amount_usd
+    type: integer
+    description:
+  - name: raised_amount
+    type: integer
+    description:
+  - name: raised_amount_currency_code
+    type: string
+    description:
+  - name: post_money_valuation_usd
+    type: integer
+    description:
+  - name: post_money_valuation
+    type: integer
+    description:
+  - name: post_money_valuation_currency_code
+    type: string
+    description:
+  - name: investor_count
+    type: integer
+    description:
+  - name: org_uuid
+    type: string
+    description:
+  - name: org_name
+    type: string
+    description:
+  - name: lead_investor_uuids
+    type: string
+    description:

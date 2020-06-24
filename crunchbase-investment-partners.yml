@@ -1,0 +1,59 @@
+name: crunchbase-investment-partners
+deployed: true
+title: Crunchbase Investment Partners
+description: Returns data about investment partners
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-investment-partners/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: funding_round_uuid
+    type: string
+    description:
+  - name: funding_round_name
+    type: string
+    description:
+  - name: investor_uuid
+    type: string
+    description:
+  - name: investor_name
+    type: string
+    description:
+  - name: partner_uuid
+    type: string
+    description:
+  - name: partner_name
+    type: string
+    description:

@@ -1,0 +1,68 @@
+name: crunchbase-jobs
+deployed: true
+title: Crunchbase Jobs
+description: Returns data about jobs
+task:
+  op: redirect
+  path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-jobs/run
+params:
+  - name: properties
+    type: array
+    description: The properties to return, given as a string or array; defaults to all properties; see "Returns" for available properties
+    required: false
+  - name: filter
+    type: array
+    description: Search query to determine the rows to return, given as a string or array
+    required: false
+returns:
+  - name: uuid
+    type: string
+    description:
+  - name: name
+    type: string
+    description:
+  - name: type
+    type: string
+    description:
+  - name: permalink
+    type: string
+    description:
+  - name: cb_url
+    type: string
+    description:
+  - name: rank
+    type: integer
+    description:
+  - name: created_at
+    type: date
+    description:
+  - name: updated_at
+    type: date
+    description:
+  - name: person_uuid
+    type: string
+    description:
+  - name: person_name
+    type: string
+    description:
+  - name: org_uuid
+    type: string
+    description:
+  - name: org_name
+    type: string
+    description:
+  - name: started_on
+    type: date
+    description:
+  - name: ended_on
+    type: date
+    description:
+  - name: is_current
+    type: boolean
+    description:
+  - name: title
+    type: string
+    description:
+  - name: job_type
+    type: string
+    description:
