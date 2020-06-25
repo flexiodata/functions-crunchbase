@@ -31,9 +31,9 @@ templates:
     excel_spreadsheet_path: https://static.flex.io/templates/crunchbase/crunchbase-quick-start-guide.xlsx
     is_public: true
     is_private: false
-  - name: search-and-filter-crunchbase-data
-    title: Interactively search and filter Crunchbase data
-    description: Import and filter any data from Crunchbase in your spreadsheet
+  - name: crunchbase-data-explorer
+    title: Crunchbase data explorer
+    description: Search and explore Crunchbase data in your spreadsheet
     gsheets_spreadsheet_id: 1MqRaWKW47VKIkBEbBIYrmamjgCC5rLozd1zdUniuecw
     excel_spreadsheet_path: https://static.flex.io/templates/crunchbase/crunchbase-search-and-filter-data.xlsx
     is_public: true
