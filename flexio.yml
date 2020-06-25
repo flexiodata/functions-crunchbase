@@ -35,7 +35,7 @@ templates:
     title: Crunchbase data explorer
     description: Search and filter Crunchbase data using an interactive query form
     gsheets_spreadsheet_id: 1MqRaWKW47VKIkBEbBIYrmamjgCC5rLozd1zdUniuecw
-    excel_spreadsheet_path: https://static.flex.io/templates/crunchbase/crunchbase-search-and-filter-data.xlsx
+    excel_spreadsheet_path: https://static.flex.io/templates/crunchbase/crunchbase-data-explorer.xlsx
     is_public: true
     is_private: false
   - name: enrich-email-list-with-company-data
