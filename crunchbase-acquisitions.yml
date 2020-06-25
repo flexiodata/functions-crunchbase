@@ -23,7 +23,7 @@ returns:
     description: Name of the acquisition
   - name: type
     type: string
-    description: Type of acquisition
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
     description: Permalink of the acquisition
