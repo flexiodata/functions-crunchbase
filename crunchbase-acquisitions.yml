@@ -17,82 +17,82 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the acquisition
   - name: name
     type: string
-    description:
+    description: Name of the acquisition
   - name: type
     type: string
-    description:
+    description: Type of acquisition
   - name: permalink
     type: string
-    description:
+    description: Permalink of the acquisition
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the acquisition
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the top 100,000 most active acquisitions
   - name: created_at
     type: date
-    description:
+    description: Date the acquisition record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the acquisition was last updated in the system
   - name: acquiree_uuid
     type: string
-    description:
+    description: Globally unique ID for the acquired organization
   - name: acquiree_name
     type: string
-    description:
+    description: Name of the acquired organization
   - name: acquiree_cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the acquired organization
   - name: acquiree_country_code
     type: string
-    description:
+    description: Country where the headquarters of the acquired organization is located
   - name: acquiree_state_code
     type: string
-    description:
+    description: State or province where the headquarters of the acquired organization is located
   - name: acquiree_region
     type: string
-    description:
+    description: Region where the headquarters of the acquired organization is located
   - name: acquiree_city
     type: string
-    description:
+    description: City where the headquarters of the acquired organization is located
   - name: acquirer_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization that made the acquisition
   - name: acquirer_name
     type: string
-    description:
+    description: Name of the organization that made the acquisition
   - name: acquirer_cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the organization that made the acquisition
   - name: acquirer_country_code
     type: string
-    description:
+    description: Country where the headquarters of the organization that made the acquisition is located
   - name: acquirer_state_code
     type: string
-    description:
+    description: State or province where the headquarters of the organization that made the acquisition is located
   - name: acquirer_region
     type: string
-    description:
+    description: Region where the headquarters of the organization that made the acquisition is located
   - name: acquirer_city
     type: string
-    description:
+    description: City where the headquarters of the organization that made the acquisition is located
   - name: acquisition_type
     type: string
-    description:
+    description: Type of acquisition (acquisition, LBO, merger, etc)
   - name: acquired_on
     type: date
-    description:
+    description: Date of the acquisition
   - name: price_usd
     type: integer
-    description:
+    description: Price of the acquisition in US dollars
   - name: price
     type: integer
-    description:
+    description: Price of the acquisition
   - name: price_currency_code
     type: string
-    description:
+    description: Currency of the acquisition price

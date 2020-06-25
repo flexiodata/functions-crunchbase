@@ -17,7 +17,7 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: The UUID for the category
   - name: name
     type: string
     description:
