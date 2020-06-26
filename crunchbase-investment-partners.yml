@@ -17,43 +17,43 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the investment the partners participated in
   - name: name
     type: string
-    description:
+    description: Name of the investment the partners participated in
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the investment the partners participated in
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the investment the partners participated in
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: funding_round_uuid
     type: string
-    description:
+    description: Globally unique ID for the funding round the partners participated in
   - name: funding_round_name
     type: string
-    description:
+    description: Name of the funding round the partners participated in
   - name: investor_uuid
     type: string
-    description:
+    description: Globally unique ID for the investor (related to crunchbase-investors)
   - name: investor_name
     type: string
-    description:
+    description: Name of the investor (related to crunchbase-investors)
   - name: partner_uuid
     type: string
-    description:
+    description: Globally unique ID for the partner who participated in the investment (related to crunchbase-investors and crunchbase-people)
   - name: partner_name
     type: string
-    description:
+    description: Name of the partner who participated in the investment (related to crunchbase-investors and crunchbase-people)
