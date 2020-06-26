@@ -17,52 +17,52 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the degree record
   - name: name
     type: string
-    description:
+    description: Name of the educational degree earned by a person (e.g. BS  Computer Science, M.A.  Physics, etc.)
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the degree record
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the degree
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: person_uuid
     type: string
-    description:
+    description: Globally unique ID for the person who earned the degree
   - name: person_name
     type: string
-    description:
+    description: Name of the person who earned the degree
   - name: institution_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization which awarded the degree
   - name: institution_name
     type: string
-    description:
+    description: Name of the organization which awarded the degree
   - name: degree_type
     type: string
-    description:
+    description: Type of degree (BA, Ph.D, MBA, etc.)
   - name: subject
     type: string
-    description:
+    description: Subject field for the degree (e.g. Computer Science, Law, Economics, etc.)
   - name: started_on
     type: date
-    description:
+    description: Date the program for the degree was started
   - name: completed_on
     type: date
-    description:
+    description: Date the degree was awarded
   - name: is_completed
     type: boolean
-    description:
+    description: Indicates whether the program for the degree was completed

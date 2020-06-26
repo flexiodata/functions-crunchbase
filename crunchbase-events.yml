@@ -17,64 +17,64 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the event
   - name: name
     type: string
-    description:
+    description: Name of the event
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the event
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the event
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: short_description
     type: string
-    description:
+    description: Short description of the event
   - name: started_on
     type: date
-    description:
+    description: Date the event started
   - name: ended_on
     type: date
-    description:
+    description: Date the event ended
   - name: event_url
     type: string
-    description:
+    description: Website URL for the event
   - name: registration_url
     type: string
-    description:
+    description: Website URL for the event registration page
   - name: venue_name
     type: string
-    description:
+    description: Name of the venue where the event occurred
   - name: description
     type: string
-    description:
+    description: Full description of the event
   - name: country_code
     type: string
-    description:
+    description: Country where the event occurred
   - name: state_code
     type: string
-    description:
+    description: State or province where the event occurred
   - name: region
     type: string
-    description:
+    description: Region where the event occurred
   - name: city
     type: string
-    description:
+    description: City where the event occurred
   - name: logo_url
     type: string
-    description:
+    description: Website URL for the event logo
   - name: event_roles
     type: string
-    description:
+    description: List of roles for the event (e.g. networking, demo day, class, expo, etc.)

@@ -17,28 +17,28 @@ params:
 returns:
   - name: uuid
     type: string
-    description: The UUID for the category
+    description: Globally unique ID for the category group
   - name: name
     type: string
-    description:
+    description: Name of the category group (e.g. Software, Mobile, Clean Energy, etc.)
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the category group
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the category group
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: category_groups_list
     type: string
-    description:
+    description: List of related industry categories (e.g. Financial Services, Media and Entertainment, etc.)

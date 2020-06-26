@@ -26,13 +26,13 @@ returns:
     description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description: Permalink of the acquisition
+    description: Permalink for the acquisition
   - name: cb_url
     type: string
     description: Crunchbase website page URL for the acquisition
   - name: rank
     type: integer
-    description: Algorithmic rank assigned to the top 100,000 most active acquisitions
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
     description: Date the acquisition record was created in the system
@@ -83,7 +83,7 @@ returns:
     description: City where the headquarters of the organization that made the acquisition is located
   - name: acquisition_type
     type: string
-    description: Type of acquisition (acquisition, LBO, merger, etc)
+    description: Type of acquisition (acquisition, LBO, merger, etc.)
   - name: acquired_on
     type: date
     description: Date of the acquisition

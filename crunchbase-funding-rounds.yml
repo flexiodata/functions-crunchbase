@@ -17,73 +17,73 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the funding round
   - name: name
     type: string
-    description:
+    description: Name of the funding round
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the funding round
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the funding round
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: country_code
     type: string
-    description:
+    description: Country associated with the funding round
   - name: state_code
     type: string
-    description:
+    description: State or province associated with the funding round
   - name: region
     type: string
-    description:
+    description: Region associated with the funding round
   - name: city
     type: string
-    description:
+    description: City associated with the funding round
   - name: investment_type
     type: string
-    description:
+    description: Type of investment for the funding round (angel, series A, etc.)
   - name: announced_on
     type: date
-    description:
+    description: Date the funding round was announced
   - name: raised_amount_usd
     type: integer
-    description:
+    description: Amount of money raised in the funding round in US dollars
   - name: raised_amount
     type: integer
-    description:
+    description: Amount of money raised in the funding round
   - name: raised_amount_currency_code
     type: string
-    description:
+    description: Currency of the amount raised in the funding round
   - name: post_money_valuation_usd
     type: integer
-    description:
+    description: Post money valuation of the organiation involved in the funding round in US dollars
   - name: post_money_valuation
     type: integer
-    description:
+    description: Post money valuation of the organiation involved in the funding round
   - name: post_money_valuation_currency_code
     type: string
-    description:
+    description: Currency of the post money valuation of the organiation involved in the funding round
   - name: investor_count
     type: integer
-    description:
+    description: Number of investors involved in the funding round
   - name: org_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization involved in the funding round
   - name: org_name
     type: string
-    description:
+    description: Name of the organization involved in the funding round
   - name: lead_investor_uuids
     type: string
-    description:
+    description: List of flobally unique ID for the lead investors involved in the funding round

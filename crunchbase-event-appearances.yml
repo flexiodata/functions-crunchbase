@@ -17,46 +17,46 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the event appearance
   - name: name
     type: string
-    description:
+    description: Name of the event appearance
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the event appearance
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the event appearance
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: event_uuid
     type: integer
-    description:
+    description: Globally unique ID for the event the appearance was at
   - name: event_name
     type: integer
-    description:
+    description: Name of the event the appearance was at
   - name: participant_uuid
     type: integer
-    description:
+    description: Globally unique ID for the organization or person who made the appearance
   - name: participant_name
     type: integer
-    description:
+    description: Name of the organization or person who made the appearance
   - name: participant_type
     type: integer
-    description:
+    description: Type of participant (e.g. organization, person, etc.)
   - name: appearance_type
     type: integer
-    description:
+    description: Type of appearance (e.g. sponsor, speaker, etc.)
   - name: short_description
     type: integer
-    description:
+    description: Short description of the event appearance
