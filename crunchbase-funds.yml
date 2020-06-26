@@ -1,7 +1,7 @@
 name: crunchbase-funds
 deployed: true
 title: Crunchbase Funds
-description: Returns data about funds
+description: Returns data about investment funds
 task:
   op: redirect
   path: https://api.flex.io/v1/integration-crunchbase/pipes/crunchbase-funds/run
@@ -17,46 +17,46 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the investment fund
   - name: name
     type: string
-    description:
+    description: Name of the fund
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the fund
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the fund
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: entity_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization or entity that manages the fund
   - name: entity_name
     type: string
-    description:
+    description: Name of the organization or entity that manages the fund
   - name: entity_type
     type: string
-    description:
+    description: Type of entity that manages the fund
   - name: announced_on
     type: date
-    description:
+    description: Date when the fund was announced
   - name: raised_amount_usd
     type: integer
-    description:
+    description: Amount raised by the fund in US dollars
   - name: raised_amount
     type: integer
-    description:
+    description: Amount raised by the fund
   - name: raised_amount_currency_code
     type: string
-    description:
+    description: Currency of the amount raised by the fund
