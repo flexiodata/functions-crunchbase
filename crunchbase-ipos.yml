@@ -17,82 +17,82 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the IPO
   - name: name
     type: string
-    description:
+    description: Name of the IPO
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink of the IPO
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the IPO
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the IPO record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the IPO was last updated in the system
   - name: org_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization that made the IPO
   - name: org_name
     type: string
-    description:
+    description: Name of the organization that made the IPO
   - name: org_cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the organization that made the IPO
   - name: country_code
     type: string
-    description:
+    description: Country where the headquarters of the organization that made the IPO is located
   - name: state_code
     type: string
-    description:
+    description: State or province where the headquarters of the organization that made the IPO is located
   - name: region
     type: string
-    description:
+    description: Region where the headquarters of the organization that made the IPO is located
   - name: city
     type: string
-    description:
+    description: City where the headquarters of the organization that made the IPO is located
   - name: stock_exchange_symbol
     type: string
-    description:
+    description: Symbol of the stock exchange where the organization made the IPO
   - name: stock_symbol
     type: string
-    description:
+    description: Stock symbol of the organization that made the IPO
   - name: went_public_on
     type: date
-    description:
+    description: Date the organization went public on
   - name: share_price_usd
     type: number
-    description:
+    description: Share price of the IPO in USD
   - name: share_price
     type: number
-    description:
+    description: Share price of the IPO in the currency given by the share price currency code
   - name: share_price_currency_code
     type: string
-    description:
+    description: Share price currency code of the share price of the IPO
   - name: valuation_price_usd
     type: integer
-    description:
+    description: Valuation price in USD
   - name: valuation_price
     type: integer
-    description:
+    description: Valuation price in the currency given by the valuation price currency code
   - name: valuation_price_currency_code
     type: string
-    description:
+    description: Valuation price currency code of the valuation price
   - name: money_raised_usd
     type: integer
-    description:
+    description: Money raised in USD
   - name: money_raised
     type: integer
-    description:
+    description: Money raised in the currency given by the money raised currency code
   - name: money_raised_currency_code
     type: string
-    description:
+    description: Money raised currency code of the money raised
