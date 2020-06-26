@@ -17,52 +17,52 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the job
   - name: name
     type: string
-    description:
+    description: Name of the job
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the job
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the job
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the job record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the job was last updated in the system
   - name: person_uuid
     type: string
-    description:
+    description: Globally unique ID for the person having the job
   - name: person_name
     type: string
-    description:
+    description: Name of the person having the job
   - name: org_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization where the job is being performed
   - name: org_name
     type: string
-    description:
+    description: Name of the organization where the job is being performed
   - name: started_on
     type: date
-    description:
+    description: Date the job started
   - name: ended_on
     type: date
-    description:
+    description: Date the job ended
   - name: is_current
     type: boolean
-    description:
+    description: Whether or not the job is currently being performed
   - name: title
     type: string
-    description:
+    description: The title of the job position
   - name: job_type
     type: string
-    description:
+    description: The type of job
