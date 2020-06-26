@@ -17,125 +17,125 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the organization
   - name: name
     type: string
-    description:
+    description: Name of the organization
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink of the organization
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the organization
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the organization record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the organization was last updated in the system
   - name: legal_name
     type: string
-    description:
+    description: Legal name of the organization
   - name: roles
     type: string
-    description:
+    description: List of roles served by the organization
   - name: domain
     type: string
-    description:
+    description: Domain name of the organization
   - name: homepage_url
     type: string
-    description:
+    description: Homepage website page URL for the organization
   - name: country_code
     type: string
-    description:
+    description: Country where the headquarters of the organization is located
   - name: state_code
     type: string
-    description:
+    description: State or province where the headquarters of the organization is located
   - name: region
     type: string
-    description:
+    description: Region where the headquarters of the organization is located
   - name: city
     type: string
-    description:
+    description: City where the headquarters of the organization is located
   - name: address
     type: string
-    description:
+    description: Address where the headquarters of the organization is located
   - name: postal_code
     type: string
-    description:
+    description: Postal code where the headquarters of the organization is located
   - name: status
     type: string
-    description:
+    description: Current status of the organization
   - name: short_description
     type: string
-    description:
+    description: Short description of the organization
   - name: category_list
     type: string
-    description:
+    description: List of business categories the organization is involved in
   - name: category_groups_list
     type: string
-    description:
+    description: List of business category groups the organization is involved in
   - name: num_funding_rounds
     type: integer
-    description:
+    description: Number of funding rounds raised by the organization
   - name: total_funding_usd
     type: integer
-    description:
+    description: Total funding amount raised by the organization in USD
   - name: total_funding
     type: integer
-    description:
+    description: Total funding amount raised by the organization in the currency given by the funding currency code
   - name: total_funding_currency_code
     type: string
-    description:
+    description: Funding currency code of the total funding amount raised by the organization
   - name: founded_on
     type: date
-    description:
+    description: Date the organization was found on
   - name: last_funding_on
     type: date
-    description:
+    description: Date the organization was last funded
   - name: closed_on
     type: date
-    description:
+    description: Date the organization was closed
   - name: employee_count
     type: string
-    description:
+    description: Number of employees in the organization
   - name: email
     type: string
-    description:
+    description: Primary contact email address for the organization
   - name: phone
     type: string
-    description:
+    description: Primary phone number for the organization
   - name: facebook_url
     type: string
-    description:
+    description: Facebook website page URL for the organization
   - name: linkedin_url
     type: string
-    description:
+    description: LinkedIn website page URL for the organization
   - name: twitter_url
     type: string
-    description:
+    description: Twitter website page URL for the organization
   - name: logo_url
     type: string
-    description:
+    description: Logo URL for the organization
   - name: alias1
     type: string
-    description:
+    description: Alternative name for the organization
   - name: alias2
     type: string
-    description:
+    description: Alternative name for the organization
   - name: alias3
     type: string
-    description:
+    description: Alternative name for the organization
   - name: primary_role
     type: string
-    description:
+    description: Primary role served by the organization
   - name: num_exits
     type: integer
-    description:
+    description: The number of exists the organization was involved in
 

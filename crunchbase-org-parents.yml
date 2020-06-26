@@ -17,31 +17,31 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the organization
   - name: name
     type: string
-    description:
+    description: Name of the organization
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the organization
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the organization
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the organization record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the organization was last updated in the system
   - name: parent_uuid
     type: string
-    description:
+    description: Globally unique ID for the parent organization
   - name: parent_name
     type: string
-    description:
+    description: Name of the parent organization
