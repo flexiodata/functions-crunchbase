@@ -17,28 +17,28 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the person
   - name: name
     type: string
-    description:
+    description: Name of the person
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the person
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the person
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the person record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the person was last updated in the system
   - name: description
     type: string
-    description:
+    description: Description of the person

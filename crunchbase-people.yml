@@ -17,67 +17,67 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the person
   - name: name
     type: string
-    description:
+    description: Name of the person
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the person
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the person
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the person record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the person was last updated in the system
   - name: first_name
     type: string
-    description:
+    description: First name of the person
   - name: last_name
     type: string
-    description:
+    description: Last name of the person
   - name: gender
     type: string
-    description:
+    description: Gender of the person
   - name: country_code
     type: string
-    description:
+    description: Country where the person lives
   - name: state_code
     type: string
-    description:
+    description: State or province where the person lives
   - name: region
     type: string
-    description:
+    description: Region where the person lives
   - name: city
     type: string
-    description:
+    description: City where the person lives
   - name: featured_job_organization_uuid
     type: string
-    description:
+    description: Globally unique ID for the organization featured for the person
   - name: featured_job_organization_name
     type: string
-    description:
+    description: Name of the organization featured for the person
   - name: featured_job_title
     type: string
-    description:
+    description: Job title featured for the person
   - name: facebook_url
     type: string
-    description:
+    description: Facebook website page URL for the person
   - name: linkedin_url
     type: string
-    description:
+    description: LinkedIn website page URL for the person
   - name: twitter_url
     type: string
-    description:
+    description: Twitter website page URL for the person
   - name: logo_url
     type: string
-    description:
+    description: Logo URL for the person
