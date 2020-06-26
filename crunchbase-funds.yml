@@ -50,7 +50,7 @@ returns:
     description: Type of entity that manages the fund
   - name: announced_on
     type: date
-    description: Date when the fund was announced
+    description: Date the fund was announced
   - name: raised_amount_usd
     type: integer
     description: Amount raised by the fund in US dollars
