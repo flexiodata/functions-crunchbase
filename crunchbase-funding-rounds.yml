@@ -86,4 +86,4 @@ returns:
     description: Name of the organization involved in the funding round
   - name: lead_investor_uuids
     type: string
-    description: List of flobally unique ID for the lead investors involved in the funding round
+    description: List of globally unique IDs for the lead investors involved in the funding round

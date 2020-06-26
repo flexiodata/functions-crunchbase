@@ -17,76 +17,76 @@ params:
 returns:
   - name: uuid
     type: string
-    description:
+    description: Globally unique ID for the investor
   - name: name
     type: string
-    description:
+    description: Name of the investor
   - name: type
     type: string
-    description:
+    description: Type of information described by the globally unique ID
   - name: permalink
     type: string
-    description:
+    description: Permalink for the investor
   - name: cb_url
     type: string
-    description:
+    description: Crunchbase website page URL for the investor
   - name: rank
     type: integer
-    description:
+    description: Algorithmic rank assigned to the record
   - name: created_at
     type: date
-    description:
+    description: Date the record was created in the system
   - name: updated_at
     type: date
-    description:
+    description: Date the information for the record was last updated in the system
   - name: roles
     type: string
-    description:
+    description: List of roles for the investor (e.g. investor, company, etc.)
   - name: domain
     type: string
-    description:
+    description: Website domain for the investor
   - name: country_code
     type: string
-    description:
+    description: Country where the investor is located
   - name: state_code
     type: string
-    description:
+    description: State or province where the investor is located
   - name: region
     type: string
-    description:
+    description: Region where the investor is located
   - name: city
     type: string
-    description:
+    description: City where the investor is located
   - name: investor_types
     type: string
-    description:
+    description: Type of investor (e.g. angel, venture_capital, etc.)
   - name: investment_count
     type: integer
-    description:
+    description: Number of investments the investor has participated in
   - name: total_funding_usd
     type: integer
-    description:
+    description: Total funding amount raised across funds in US dollars
   - name: total_funding
     type: integer
-    description:
+    description: Total funding amount raised across funds
   - name: total_funding_currency_code
     type: string
-    description:
+    description: Currency of the total funding amount raised across funds
   - name: founded_on
     type: date
-    description:
+    description: Date the organization was founded
   - name: closed_on
     type: date
-    description:
+    description: Date when the organization was closed
   - name: facebook_url
     type: string
-    description:
+    description: Facebook page URL for the investor
   - name: linkedin_url
     type: string
-    description:
+    description: LinkedIn profile URL for the investor
   - name: twitter_url
     type: string
-    description:
+    description: Twitter profile URL for the investor
   - name: logo_url
     type: string
-    description:
+    description: Website URL for the investor's logo
