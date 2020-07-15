@@ -57,3 +57,5 @@ returns:
   - name: partner_name
     type: string
     description: Name of the partner who participated in the investment (related to crunchbase-investors and crunchbase-people)
+examples:
+  - '"*"'

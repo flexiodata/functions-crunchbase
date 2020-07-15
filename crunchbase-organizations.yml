@@ -138,4 +138,5 @@ returns:
   - name: num_exits
     type: integer
     description: The number of exists the organization was involved in
-
+examples:
+  - '"*"'

@@ -87,3 +87,5 @@ returns:
   - name: lead_investor_uuids
     type: string
     description: List of globally unique IDs for the lead investors involved in the funding round
+examples:
+  - '"*"'

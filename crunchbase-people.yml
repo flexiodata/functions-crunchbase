@@ -81,3 +81,5 @@ returns:
   - name: logo_url
     type: string
     description: Logo URL for the person
+examples:
+  - '"*"'

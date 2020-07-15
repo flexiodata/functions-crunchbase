@@ -57,3 +57,5 @@ returns:
   - name: is_lead_investor
     type: boolean
     description: Indicates whether the organization or person was the lead investor
+examples:
+  - '"*"'

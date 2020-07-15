@@ -60,3 +60,5 @@ returns:
   - name: raised_amount_currency_code
     type: string
     description: Currency of the amount raised by the fund
+examples:
+  - '"*"'

@@ -78,3 +78,5 @@ returns:
   - name: event_roles
     type: string
     description: List of roles for the event (e.g. networking, demo day, class, expo, etc.)
+examples:
+  - '"*"'

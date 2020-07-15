@@ -96,3 +96,5 @@ returns:
   - name: price_currency_code
     type: string
     description: Currency of the acquisition price
+examples:
+  - '"*"'

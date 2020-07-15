@@ -45,3 +45,5 @@ returns:
   - name: parent_name
     type: string
     description: Name of the parent organization
+examples:
+  - '"*"'

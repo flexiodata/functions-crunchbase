@@ -42,3 +42,5 @@ returns:
   - name: category_groups_list
     type: string
     description: List of related industry categories (e.g. Financial Services, Media and Entertainment, etc.)
+examples:
+  - '"*"'

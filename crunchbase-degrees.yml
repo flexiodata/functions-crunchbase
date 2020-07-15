@@ -66,3 +66,5 @@ returns:
   - name: is_completed
     type: boolean
     description: Indicates whether the program for the degree was completed
+examples:
+  - '"*"'

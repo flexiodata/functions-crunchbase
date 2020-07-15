@@ -90,3 +90,5 @@ returns:
   - name: logo_url
     type: string
     description: Website URL for the investor's logo
+examples:
+  - '"*"'

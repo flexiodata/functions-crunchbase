@@ -60,3 +60,5 @@ returns:
   - name: short_description
     type: integer
     description: Short description of the event appearance
+examples:
+  - '"*"'

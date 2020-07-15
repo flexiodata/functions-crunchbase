@@ -96,3 +96,5 @@ returns:
   - name: money_raised_currency_code
     type: string
     description: Money raised currency code of the money raised
+examples:
+  - '"*"'
