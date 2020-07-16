@@ -59,6 +59,9 @@ returns:
     description: Indicates whether the organization or person was the lead investor
 examples:
   - '"*"'
+  - '"investor_name, investor_type, is_lead_investor, funding_round_name, cb_url", "+investor_name:""Jeff Bezos"""'
+  - '"investor_name, investor_type, is_lead_investor, funding_round_name, cb_url", "+funding_round_name: Google -funding_round_name:Adometry"'
+  - '"investor_name, investor_type, is_lead_investor, funding_round_name, cb_url", "+is_lead_investor:True +funding_round_name:""Series A"""'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
