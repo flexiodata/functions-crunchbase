@@ -68,6 +68,9 @@ returns:
     description: Indicates whether the program for the degree was completed
 examples:
   - '"*"'
+  - '"person_name, institution_name, degree_type, subject","""Elon Musk"""'
+  - '"person_uuid, person_name, institution_name, degree_type, subject, completed_on","+Physics +completed_on:>=2015-01-01"'
+  - '"person_uuid, person_name, institution_name, degree_type, subject, completed_on","(Stanford OR MIT) AND completed_on:>=2020-01-01"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
