@@ -140,3 +140,9 @@ returns:
     description: The number of exists the organization was involved in
 examples:
   - '"*"'
+notes: |-
+  Additional Resources:
+  * Flexio Crunchbase Templates: \
+    https://www.flex.io/integrations/crunchbase/
+  * Flexio Function Syntax Tutorial: \
+    https://www.flex.io/resources/examples/

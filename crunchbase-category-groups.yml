@@ -44,3 +44,9 @@ returns:
     description: List of related industry categories (e.g. Financial Services, Media and Entertainment, etc.)
 examples:
   - '"*"'
+notes: |-
+  Additional Resources:
+  * Flexio Crunchbase Templates: \
+    https://www.flex.io/integrations/crunchbase/
+  * Flexio Function Syntax Tutorial: \
+    https://www.flex.io/resources/examples/

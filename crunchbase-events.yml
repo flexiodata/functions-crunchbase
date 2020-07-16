@@ -80,3 +80,9 @@ returns:
     description: List of roles for the event (e.g. networking, demo day, class, expo, etc.)
 examples:
   - '"*"'
+notes: |-
+  Additional Resources:
+  * Flexio Crunchbase Templates: \
+    https://www.flex.io/integrations/crunchbase/
+  * Flexio Function Syntax Tutorial: \
+    https://www.flex.io/resources/examples/

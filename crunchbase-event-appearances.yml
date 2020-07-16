@@ -62,3 +62,9 @@ returns:
     description: Short description of the event appearance
 examples:
   - '"*"'
+notes: |-
+  Additional Resources:
+  * Flexio Crunchbase Templates: \
+    https://www.flex.io/integrations/crunchbase/
+  * Flexio Function Syntax Tutorial: \
+    https://www.flex.io/resources/examples/
