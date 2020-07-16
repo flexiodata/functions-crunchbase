@@ -80,6 +80,9 @@ returns:
     description: List of roles for the event (e.g. networking, demo day, class, expo, etc.)
 examples:
   - '"*"'
+  - '"name, permalink, started_on, ended_on, city, country_code", "name: Economic"'
+  - '"name, permalink, started_on, ended_on, city, country_code", "+state_code:CA +started_on:>=2020-01-01"'
+  - '"name, permalink, started_on, ended_on, venue_name, state_code", "+venue_name:Moscone"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
