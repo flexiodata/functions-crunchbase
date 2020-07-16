@@ -89,6 +89,9 @@ returns:
     description: List of globally unique IDs for the lead investors involved in the funding round
 examples:
   - '"*"'
+  - '"org_name, investment_type, announced_on, raised_amount_usd, post_money_valuation_usd, investor_count, permalink", "SpaceX"'
+  - '"org_name, investment_type, announced_on, raised_amount_usd, investor_count, permalink", "+investment_type:angel +announced_on:>=2020-01-01"'
+  - '"org_name, investment_type, announced_on, raised_amount_usd, investor_count, permalink", "+region:Illinois +announced_on:>=2020-01-01"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
