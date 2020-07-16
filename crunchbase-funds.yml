@@ -62,6 +62,9 @@ returns:
     description: Currency of the amount raised by the fund
 examples:
   - '"*"'
+  - '"name, entity_name, announced_on, raised_amount_usd, cb_url", "+announced_on:>=2020-01-01"'
+  - '"name, entity_name, announced_on, raised_amount_usd, cb_url", "+entity_name:""Sequoia Capital"" -India -China -Israel"'
+  - '"name, entity_name, announced_on, raised_amount_usd, cb_url", "China"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
