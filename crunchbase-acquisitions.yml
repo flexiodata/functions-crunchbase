@@ -98,7 +98,9 @@ returns:
     description: Currency of the acquisition price
 examples:
   - '"*"'
-
+  - '"name, permalink, acquirer_name, acquiree_name, acquired_on, price, price_currency_code", "+acquirer_name:Google"'
+  - '"name, permalink acquirer_name, acquiree_name, acquired_on, price, price_currency_code", "+acquirer_name:Apple +acquired_on:>=2020-01-01"'
+  - '"permalink, acquirer_name, acquiree_name, acquired_on, price_usd", "(acquirer_name:Apple OR acquirer_name:Microsoft) AND acquired_on:>=2020-01-01"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
