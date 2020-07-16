@@ -59,6 +59,9 @@ returns:
     description: Name of the partner who participated in the investment (related to crunchbase-investors and crunchbase-people)
 examples:
   - '"*"'
+  - '"name, funding_round_name, investor_name, partner_name", "+Peter +Thiel"'
+  - '"name, funding_round_name, investor_name, partner_name", "+investor_name:""Founders Fund"" +funding_round_name:""Series A"""'
+  - '"name, funding_round_name, investor_name, partner_name", "+funding_round_name:SpaceX"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
