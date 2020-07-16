@@ -62,6 +62,9 @@ returns:
     description: Short description of the event appearance
 examples:
   - '"*"'
+  - '"event_name, participant_name, participant_type, appearance_type","+Techcrunch +Disrupt +appearance_type:speaker"'
+  - '"event_name, participant_name, participant_type, appearance_type","(Andreessen OR Sequoia) AND +participant_type:organization"'
+  - '"event_name, participant_name, participant_type, appearance_type","+participant_name:""Bill Gates"""'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
