@@ -44,6 +44,9 @@ returns:
     description: List of related industry categories (e.g. Financial Services, Media and Entertainment, etc.)
 examples:
   - '"*"'
+  - '"name, permalink, category_groups_list", "+category_groups_list:Investments"'
+  - '"name, permalink, category_groups_list", "+category_groups_list:Investments -Credit"'
+  - '"name, permalink, category_groups_list", "venture Or angel"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
