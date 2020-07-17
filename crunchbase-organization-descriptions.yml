@@ -44,6 +44,9 @@ returns:
     description: Description of the organization
 examples:
   - '"*"'
+  - '"name, description", "+spreadsheet +report*"'
+  - '"name, description", "+space +equipment +manufacturer"'
+  - '"name, description", "+(renewable OR clean) +energy -""venture capital firm"""'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
