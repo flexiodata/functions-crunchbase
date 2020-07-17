@@ -83,6 +83,9 @@ returns:
     description: Logo URL for the person
 examples:
   - '"*"'
+  - '"first_name, last_name, featured_job_organization_name, featured_job_title, linkedin_url", "+Google +Engineer"'
+  - '"first_name, last_name, featured_job_organization_name, featured_job_title", "featured_job_title:Partner"'
+  - '"first_name, last_name, featured_job_organization_name, featured_job_title, linkedin_url", "+Jeff +Bezos"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
