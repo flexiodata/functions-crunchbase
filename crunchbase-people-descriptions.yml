@@ -44,6 +44,9 @@ returns:
     description: Description of the person
 examples:
   - '"*"'
+  - '"name, description", "+""Jeff Bezos"""'
+  - '"name, description", "name:""Elon Musk"""'
+  - '"name, description", "+founder +software +""invested in"""'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
