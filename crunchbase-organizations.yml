@@ -140,6 +140,9 @@ returns:
     description: The number of exists the organization was involved in
 examples:
   - '"*"'
+  - '"name, homepage_url, category_groups_list, founded_on, closed_on, employee_count", "category_groups_list:advertising"'
+  - '"name, homepage_url, category_groups_list, founded_on, closed_on, employee_count", "closed_on:>=2020-01-01"'
+  - '"name, homepage_url, category_groups_list, founded_on, closed_on, employee_count", "+founded_on:>=2020-01-01 +employee_count:11-50"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
