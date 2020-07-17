@@ -47,6 +47,9 @@ returns:
     description: Name of the parent organization
 examples:
   - '"*"'
+  - '"name, parent_name, rank, cb_url", "Sequoia"'
+  - '"name, parent_name, cb_url", "parent_name:Facebook"'
+  - '"name, parent_name, rank, cb_url", "name:Instagram"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
