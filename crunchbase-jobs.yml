@@ -68,6 +68,9 @@ returns:
     description: The type of job
 examples:
   - '"*"'
+  - '"person_name, org_name, title, job_type, started_on, ended_on","+title:Founder"'
+  - '"person_name, org_name, title, started_on, cb_url","+title:Founder +started_on:>=2020-01-01"'
+  - '"person_name, org_name, title, job_type, started_on, ended_on, cb_url","+title:software +title:engineer +ended_on:>=2020-01-01"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
