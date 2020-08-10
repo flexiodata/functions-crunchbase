@@ -98,7 +98,7 @@ returns:
     description: Money raised currency code of the money raised
 examples:
   - '"*"'
-  - '"org_name, stock_exchange_symbol, stock_symbol, went_public_on, share_price_usd", "AAPL, MSFT, AMZN, GOOG"'
+  - '"org_name, stock_exchange_symbol, stock_symbol, went_public_on, share_price_usd", "AAPL MSFT AMZN GOOG"'
   - '"org_name, stock_exchange_symbol, stock_symbol, went_public_on, share_price_usd", "+stock_exchange_symbol:NYSE +went_public_on:>=2020-01-01"'
   - '"org_name, stock_exchange_symbol, went_public_on, cb_url", "+stock_exchange_symbol:NASDAQ +went_public_on:[2000-01-01 TO 2000-12-31]"'
 notes: |-
