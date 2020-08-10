@@ -94,7 +94,7 @@ examples:
   - '"*"'
   - '"name, investor_types, city, state_code, investment_count, founded_on, closed_on, cb_url", "+investor_types:venture_capital +state_code:CA"'
   - '"name, investor_types, city, state_code, investment_count, founded_on, closed_on, cb_url", "+founded_on:>=2020-01-01"'
-  - '"name, investor_types, city, investment_count, cb_url", "+investor_types:private_equity_firm -investor_types:venture* +investment_count:>=0 +state_code:NY"'
+  - '"name, investor_types, city, investment_count, cb_url", "+investor_types:private_equity_firm -investor_types:venture* +investment_count:>0 +state_code:NY"'
 notes: |-
   Additional Resources:
   * Flexio Crunchbase Templates: \
